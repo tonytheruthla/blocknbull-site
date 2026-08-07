@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-01T17:20:03",
+  "handle": "@blocknbull",
+  "count": 5,
+  "posts": [
+    {
+      "date": "2026-08-01",
+      "pillar": "P1 Daily Block",
+      "caption": "August opened with both majors down over 3%.\n\nBitcoin fell to roughly $62,869 (-3.25%), Ethereum to about $1,865 (-3.18%), and total crypto market cap slipped to $2.25T. Fear & Greed held at 27 \u2014 unchanged from a week ago, still squarely in Fear territory.\n\nA few things worth knowing about today's move rather than reacting to it:\n\n\u2192 Polkadot and the XRP Ledger ecosystem were the standout gainers even as majors fell \u2014\u2026",
+      "image": "assets/feed/2026-08-01__daily_block_1_pullback.png",
+      "profile_url": "https://instagram.com/blocknbull"
+    },
+    {
+      "date": "2026-07-30",
+      "pillar": "P3 Weekly Read",
+      "caption": "The Fed stopped pretending cuts were coming.\n\nThree officials voted against holding rates this week \u2014 and all three wanted them higher. First unified triple dissent since September 2016.\n\nThen the projections moved up: end-2026 expectations went from 3.25\u20133.75% to 3.6\u20134.1%.\n\nHigher-for-longer isn't a risk scenario now. It's the base case.\n\nBut the flows are telling a different story. US spot Bitcoin ETFs just logged\u2026",
+      "image": "assets/feed/2026-07-30__carousel_1.png",
+      "profile_url": "https://instagram.com/blocknbull"
+    },
+    {
+      "date": "2026-07-29",
+      "pillar": "P5 Culture",
+      "caption": "The Fear & Greed Index is on every crypto headline. Almost nobody reads it correctly.\n\nIt's one number from 0 to 100, built from five weighted inputs:\n\n\u2192 Volatility \u2014 25%\n\u2192 Market momentum and volume \u2014 25%\n\u2192 Social media activity \u2014 15%\n\u2192 Bitcoin dominance \u2014 10%\n\u2192 Google Trends \u2014 10%\n\nRight now it reads 29. That's Fear.\n\n**Two things people get wrong:**\n\n**It's not a buy signal.** \"Be greedy when others are fearful\" i\u2026",
+      "image": "assets/feed/2026-07-29-chart-school__carousel_1.png",
+      "profile_url": "https://instagram.com/blocknbull"
+    },
+    {
+      "date": "2026-07-27",
+      "pillar": "P5 Culture",
+      "caption": "Five things people get wrong about Bitcoin \u2014 and none of them are stupid questions.\n\n\ud83d\udd34 \"They can just print more\" \u2192 Hard-capped at 21 million. That limit lives in the code every node runs. Changing it would require near-universal agreement from people voting to devalue their own holdings. The cap IS the product.\n\n\ud83d\udd34 \"You can reverse a transaction\" \u2192 Once confirmed, it's permanent. No support desk. No chargeback. Send\u2026",
+      "image": "assets/feed/2026-07-27-myth-busted__carousel_1.png",
+      "profile_url": "https://instagram.com/blocknbull"
+    },
+    {
+      "date": "2026-07-18",
+      "pillar": "P1 Daily Block",
+      "caption": "The most important crypto story this week isn't a price \u2014 it's a law.\n\nThe CLARITY Act is headed for a House vote. If it passes, the US finally gets an answer to the question that's haunted crypto for a decade: which tokens are securities, and which are commodities?\n\nWhy it matters:\n\u2192 Clear rules = institutions can finally build without guessing\n\u2192 Ends the SEC vs CFTC turf war over your portfolio\n\u2192 Historically, regu\u2026",
+      "image": "assets/feed/2026-07-18__daily_block_1_clarity_act.png",
+      "profile_url": "https://instagram.com/blocknbull"
+    }
+  ]
+}
