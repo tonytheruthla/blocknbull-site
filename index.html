@@ -233,7 +233,7 @@
     transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
   }
   .win-card:hover{transform:translateY(-5px) scale(1.02); border-color:var(--gold); box-shadow:0 18px 44px -16px rgba(212,166,60,.35);}
-  .win-card img{width:100%; height:auto;}
+  .win-card img{width:100%; height:auto; aspect-ratio:640/852;}
   .warn-banner{
     margin-top:36px; font-size:12.5px; color:var(--grey); border:1px solid var(--line-2);
     background:rgba(255,255,255,.02); border-radius:12px; padding:14px 18px; line-height:1.6;
@@ -813,7 +813,7 @@ const WINS = [
 })();
 /* wall rows */
 (function(){
-  const card = w => `<div class="win-card" data-img="${w.img}"><img src="${w.img}" alt="${w.pair} ${w.side} ${w.gain} closed trade screenshot" loading="lazy" onerror="this.closest('.win-card').style.display='none'"></div>`;
+  const card = w => `<div class="win-card" data-img="${w.img}"><img src="${w.img}" alt="${w.pair} ${w.side} ${w.gain} closed trade screenshot" onerror="this.closest('.win-card').style.display='none'"></div>`;
   const r1 = WINS.slice(0, 6).map(card).join('');
   const r2 = WINS.slice(6).map(card).join('');
   document.getElementById('winsRow1').innerHTML = r1 + r1;
