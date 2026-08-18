@@ -14,6 +14,8 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 - [Crypto Tax India 2026: Schedule VDA](https://blocknbull.xyz/crypto-tax-india-schedule-vda): Tax rates, ITR-2 vs ITR-3, what happens if you missed the July 31 deadline, and Budget 2026 changes.
 - [Is There a GIWA Chain Airdrop?](https://blocknbull.xyz/giwa-chain-airdrop-guide): What GIWA actually is, who's building it, and whether an airdrop has been confirmed.
 
+- [Bybit vs Binance for Indian Traders (2026)](https://blocknbull.xyz/bybit-vs-binance-india): FIU-IND status, the real fee gap, INR deposit routes, and both security records compared.
+
 ## About
 
 - [Homepage](https://blocknbull.xyz/): daily market breakdowns, documented trade receipts, and exchange bonus comparisons.
