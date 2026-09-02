@@ -15,6 +15,12 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 - [Is There a GIWA Chain Airdrop?](https://blocknbull.xyz/giwa-chain-airdrop-guide): What GIWA actually is, who's building it, and whether an airdrop has been confirmed.
 
 - [Bybit vs Binance for Indian Traders (2026)](https://blocknbull.xyz/bybit-vs-binance-india): FIU-IND status, the real fee gap, INR deposit routes, and both security records compared.
+- [How to Start Crypto Trading in India With ₹1,000 (2026)](https://blocknbull.xyz/start-crypto-trading-india-1000-rupees): FIU-registered exchanges, free KYC, real minimum deposits, the 30% tax and 1% TDS, and beginner mistakes to avoid.
+
+## Markets & analysis
+
+- [What the MSCI India Rebalance Actually Did to $1.5 Billion (Sep 2026)](https://blocknbull.xyz/msci-india-rebalance-september-2026): Which stocks MSCI added and dropped, why Reliance saw a $523M outflow without being removed, and how passive index flows work.
+- [What Actually Happens to Stocks and Bitcoin When the Fed Hikes Rates (2026)](https://blocknbull.xyz/fed-rate-hikes-stocks-bitcoin-history): Five Fed tightening cycles since 1990, Bitcoin's one full cycle, and why surprise repricing moved prices more than the hikes themselves.
 
 ## About
 
