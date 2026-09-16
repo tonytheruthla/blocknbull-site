@@ -16,11 +16,16 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 
 - [Bybit vs Binance for Indian Traders (2026)](https://blocknbull.xyz/bybit-vs-binance-india): FIU-IND status, the real fee gap, INR deposit routes, and both security records compared.
 - [How to Start Crypto Trading in India With ₹1,000 (2026)](https://blocknbull.xyz/start-crypto-trading-india-1000-rupees): FIU-registered exchanges, free KYC, real minimum deposits, the 30% tax and 1% TDS, and beginner mistakes to avoid.
+- [Which Crypto Exchanges Are Blocked in India? FIU-IND's September 2026 Takedown List](https://blocknbull.xyz/crypto-exchanges-blocked-india-fiu-2026): The 15 offshore exchanges (including WEEX and Blofin) flagged for AML non-compliance on 9 September 2026, what happens to funds on a blocked platform, how to check FIU-IND registration, and which exchanges are still registered.
 
 ## Markets & analysis
 
+- [Six IPOs in One Day: What India's Biggest Primary Rush Since 1996 Actually Tells You (Sep 2026)](https://blocknbull.xyz/india-ipo-rush-ofs): Why six mainboard IPOs opened together for the first time since 1996, the fresh-issue versus offer-for-sale distinction that decides where your money goes, and what to check instead of the grey market premium.
+- [The CPI Number Isn't What Moves Markets. The Gap Is. (Sep 2026)](https://blocknbull.xyz/cpi-surprise-explained): Why markets trade the surprise rather than the level, what the August CPI consensus and the Cleveland Fed nowcast say, and why core matters more than headline when oil is moving.
+- [What $97 Crude Actually Does to Indian Portfolios (Sep 2026)](https://blocknbull.xyz/crude-oil-india-sector-map): India imports 85% of its crude — the chain from a tanker strike to the import bill, the rupee, sector cost structures, and what the government can do about it.
 - [What the MSCI India Rebalance Actually Did to $1.5 Billion (Sep 2026)](https://blocknbull.xyz/msci-india-rebalance-september-2026): Which stocks MSCI added and dropped, why Reliance saw a $523M outflow without being removed, and how passive index flows work.
 - [What Actually Happens to Stocks and Bitcoin When the Fed Hikes Rates (2026)](https://blocknbull.xyz/fed-rate-hikes-stocks-bitcoin-history): Five Fed tightening cycles since 1990, Bitcoin's one full cycle, and why surprise repricing moved prices more than the hikes themselves.
+- [What Actually Happens to Bitcoin When the Yen Carry Trade Unwinds (2026)](https://blocknbull.xyz/yen-carry-trade-bitcoin-explained): What a carry trade is, the August 2024 BIS-documented case study, and why Bitcoin's yen correlation may be dollar-driven rather than carry-trade-driven in 2026.
 
 ## About
 
