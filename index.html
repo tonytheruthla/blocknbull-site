@@ -90,7 +90,7 @@
       "name": "Which exchange should I start with?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bybit is our default recommendation for most people — deep liquidity, fast KYC, wide asset coverage. Binance, WEEX, and Blofin are all worth comparing too; the right one depends on what you're trying to do."
+        "text": "If you're in India, start with an FIU-IND registered exchange — Bybit or Binance. Both are registered under the Prevention of Money Laundering Act and legal to use. WEEX and Blofin are not: on 9 September 2026 both were named in an FIU-IND non-compliance notice and ordered blocked for Indian users. Registration status changes, so check FIU-IND's published list before you deposit."
       }
     },
     {
@@ -311,6 +311,31 @@
     color:#191305; font-family:var(--mono); font-weight:700; font-size:10.5px; letter-spacing:.1em;
     text-transform:uppercase; border-radius:999px; padding:4px 12px;
   }
+  /* compliance split — FIU-IND registered vs flagged (17 Sep 2026) */
+  .ex-grid.two{grid-template-columns:1fr;}
+  @media(min-width:720px){.ex-grid.two{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:1040px){.ex-grid.two{grid-template-columns:repeat(2,1fr);}}
+  .ex-groupline{
+    display:flex; align-items:center; gap:10px; margin:40px 0 4px;
+    font-family:var(--mono); font-size:12.5px; font-weight:700; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--green);
+  }
+  .ex-groupline .gl-sub{
+    font-family:var(--body); font-weight:400; letter-spacing:0; text-transform:none;
+    color:var(--grey); font-size:13.5px;
+  }
+  .ex-groupline.warn{color:var(--red);}
+  .ex-card.flagged{opacity:.92; border-color:rgba(229,72,77,.34); background:linear-gradient(170deg, rgba(229,72,77,.05), var(--card) 55%);}
+  .ex-card.flagged:hover{border-color:rgba(229,72,77,.6); box-shadow:0 24px 50px -24px rgba(229,72,77,.3);}
+  .ex-card.flagged .ex-name{color:var(--grey);}
+  .ex-badge.warn{background:linear-gradient(180deg,#F2686C,var(--red)); color:#fff;}
+  .ex-warn{
+    font-size:12.5px; line-height:1.55; color:var(--grey);
+    border:1px solid rgba(229,72,77,.28); background:rgba(229,72,77,.06);
+    border-radius:10px; padding:10px 12px; margin-bottom:14px;
+  }
+  .ex-warn b{color:#F2686C; font-weight:700;}
+  .ex-warn a{color:var(--gold); font-weight:700; text-decoration:underline;}
   .ex-name{font-family:var(--disp); font-weight:700; font-size:21px; margin-bottom:2px;}
   .ex-tier{font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--grey-dim); margin-bottom:14px;}
   .ex-offer{
@@ -519,13 +544,14 @@
     <div class="wrap reveal">
       <div class="eyebrow">Partner exchanges</div>
       <h2>Compare the offers. <span class="accent">Then decide.</span></h2>
-      <p class="lead">Ranked in our own priority order — Bybit first, then Binance, WEEX, and Blofin. Compare the actual offer before you sign up anywhere, including with us.</p>
+      <p class="lead">Two of these are registered with India's Financial Intelligence Unit. Two are not — and were ordered blocked in India on 9 September 2026. We list all four with their status shown, so you can see the difference before you sign up anywhere, including with us.</p>
 
-      <div class="ex-grid">
+      <div class="ex-groupline">✅ FIU-IND registered <span class="gl-sub">— legal to use from India</span></div>
+      <div class="ex-grid two">
         <div class="ex-card featured">
-          <div class="ex-badge">Primary partner</div>
+          <div class="ex-badge">FIU-IND registered</div>
           <div class="ex-name">Bybit</div>
-          <div class="ex-tier">Our default recommendation</div>
+          <div class="ex-tier">Registered since Feb 2025</div>
           <div class="ex-offer">Up to $30,000 in deposit rewards</div>
           <ul class="ex-feats">
             <li>Deep derivatives + spot liquidity</li>
@@ -535,44 +561,52 @@
           <a class="btn btn-gold" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener">Claim offer ↗</a>
         </div>
 
-        <div class="ex-card">
+        <div class="ex-card featured">
+          <div class="ex-badge">FIU-IND registered</div>
           <div class="ex-name">Binance</div>
-          <div class="ex-tier">Secondary partner</div>
+          <div class="ex-tier">Registered since 2024</div>
           <div class="ex-offer">New-user USDC rewards + fee rebate</div>
           <ul class="ex-feats">
             <li>Largest global exchange by volume</li>
             <li>Widest coin listing selection</li>
             <li>Best for altcoin depth</li>
           </ul>
-          <a class="btn btn-ghost" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_MTMN5&utm_source=referral_entrance" target="_blank" rel="noopener">Claim offer ↗</a>
+          <a class="btn btn-gold" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_MTMN5&utm_source=referral_entrance" target="_blank" rel="noopener">Claim offer ↗</a>
         </div>
+      </div>
 
-        <div class="ex-card">
+      <div class="ex-groupline warn">⚠ Not FIU-registered <span class="gl-sub">— flagged in India on 9 September 2026</span></div>
+      <div class="ex-grid two">
+        <div class="ex-card flagged">
+          <div class="ex-badge warn">Not FIU-registered</div>
           <div class="ex-name">WEEX</div>
-          <div class="ex-tier">Third partner</div>
+          <div class="ex-tier">Operated by Weex International Exchange LTD</div>
+          <div class="ex-warn"><b>Flagged in India.</b> Named in FIU-IND's 9 Sep 2026 non-compliance notice under the PMLA; app stores and ISPs were ordered to block it for Indian users. <a href="/crypto-exchanges-blocked-india-fiu-2026/">Read what that means →</a></div>
           <div class="ex-offer">Up to 30,000 USDT welcome rewards</div>
           <ul class="ex-feats">
-            <li>Welcome rewards + fee discount stack</li>
-            <li>Simple onboarding for newer traders</li>
+            <li>Strong global security record (proof-of-reserves, 1,000 BTC protection fund)</li>
             <li>Where our own receipts above were traded</li>
+            <li>Not currently legal to use from India</li>
           </ul>
-          <a class="btn btn-ghost" href="https://weex.com/register?vipCode=0w9qn" target="_blank" rel="noopener">Claim offer ↗</a>
+          <a class="btn btn-ghost" href="https://weex.com/register?vipCode=0w9qn" target="_blank" rel="noopener">View offer ↗</a>
         </div>
 
-        <div class="ex-card">
+        <div class="ex-card flagged">
+          <div class="ex-badge warn">Not FIU-registered</div>
           <div class="ex-name">Blofin</div>
-          <div class="ex-tier">Fourth partner</div>
+          <div class="ex-tier">Operated by BLF Global Limited</div>
+          <div class="ex-warn"><b>Flagged in India.</b> Named in the same FIU-IND notice of 9 Sep 2026; app and website takedown ordered for Indian users. <a href="/crypto-exchanges-blocked-india-fiu-2026/">Read what that means →</a></div>
           <div class="ex-offer">Up to $5,000 deposit bonus</div>
           <ul class="ex-feats">
             <li>Deposit bonus + fee discount</li>
             <li>Growing futures product line</li>
-            <li>Worth comparing before committing</li>
+            <li>Not currently legal to use from India</li>
           </ul>
-          <a class="btn btn-ghost" href="https://blofin.com/register?referral_code=THH13l" target="_blank" rel="noopener">Claim offer ↗</a>
+          <a class="btn btn-ghost" href="https://blofin.com/register?referral_code=THH13l" target="_blank" rel="noopener">View offer ↗</a>
         </div>
       </div>
 
-      <p class="disclosure">Disclosure: referral links — we may earn a commission at no extra cost to you. Offers are set by the exchanges themselves and may change without notice. Always confirm current terms on the exchange's own site before signing up. Not financial advice.</p>
+      <p class="disclosure">Disclosure: referral links — we may earn a commission at no extra cost to you. Offers are set by the exchanges themselves and may change without notice. Always confirm current terms on the exchange's own site before signing up. <b style="color:var(--sand);">If you are in India, use an FIU-IND registered exchange.</b> Registration status changes — verify against FIU-IND's own published list rather than trusting a static page, including this one. FIU-IND registration is an anti-money-laundering status, not a SEBI or RBI approval, and it does not insure your funds. Not financial advice.</p>
     </div>
   </section>
 
@@ -665,7 +699,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q"><span>Which exchange should I start with?</span><span class="plus">+</span></button>
-          <div class="faq-a"><p>Bybit is our default recommendation for most people — deep liquidity, fast KYC, wide asset coverage. Binance, WEEX, and Blofin are all worth comparing too; the right one depends on what you're trying to do. Read the Bonuses section above before deciding.</p></div>
+          <div class="faq-a"><p>If you're in India, start with an FIU-IND registered exchange — Bybit or Binance. Both are registered under the Prevention of Money Laundering Act and legal to use. WEEX and Blofin are not: on 9 September 2026 both were named in an FIU-IND non-compliance notice and ordered blocked for Indian users. We still list them above, clearly marked, because they remain legitimate venues elsewhere — but registration status is the thing to check before you deposit a rupee, on <a href="/crypto-exchanges-blocked-india-fiu-2026/" style="color:var(--gold);">FIU-IND's own list</a> rather than a static page.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q"><span>Do you guarantee profits or sell "signals"?</span><span class="plus">+</span></button>
