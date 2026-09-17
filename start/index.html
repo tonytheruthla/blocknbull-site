@@ -3,28 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Start Here — Compare Exchange Sign-Up Offers | Block &amp; Bull</title>
-<meta name="description" content="Compare crypto exchange welcome offers side by side, read the actual terms, and start on a licensed venue. Educational content from Block &amp; Bull. Not financial advice.">
+<title>The bonus in the ad vs the bonus in the terms | Block &amp; Bull</title>
+<meta name="description" content="Exchange sign-up bonuses pay far less than the headline. We read the terms on two licensed exchanges so you deposit knowing what the reward takes. Not financial advice.">
 <link rel="canonical" href="https://blocknbull.xyz/start/">
-<meta name="theme-color" content="#0E1116">
+<meta name="theme-color" content="#0B0D12">
 <meta name="robots" content="noindex, follow">
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Block &amp; Bull">
 <meta property="og:url" content="https://blocknbull.xyz/start/">
-<meta property="og:title" content="Pick an exchange by the terms, not the ad.">
-<meta property="og:description" content="Side-by-side welcome offers from licensed exchanges, with the fine print read for you. Crypto is high-risk. Not financial advice.">
+<meta property="og:title" content="The bonus in the ad and the bonus in the terms are two different numbers.">
+<meta property="og:description" content="We read the terms on two licensed exchanges so you deposit knowing what the reward takes. Crypto is high-risk. Not financial advice.">
 <meta property="og:image" content="https://blocknbull.xyz/assets/brand/og-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@blocknbull">
-
 <link rel="icon" href="/assets/brand/icon-dark.png">
-<link rel="apple-touch-icon" href="/assets/brand/icon-dark.png">
 
-<!-- ============================================================
-     META PIXEL — paste your Pixel ID in place of PIXEL_ID_HERE.
-     Until then this block is inert (guarded below).
-     ============================================================ -->
+<!-- META PIXEL — replace PIXEL_ID_HERE. Inert until then. -->
 <script>
 window.BNB_PIXEL_ID = 'PIXEL_ID_HERE';
 if (window.BNB_PIXEL_ID && window.BNB_PIXEL_ID !== 'PIXEL_ID_HERE') {
@@ -33,210 +27,441 @@ if (window.BNB_PIXEL_ID && window.BNB_PIXEL_ID !== 'PIXEL_ID_HERE') {
   n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', window.BNB_PIXEL_ID);
-  fbq('track', 'PageView');
+  fbq('init', window.BNB_PIXEL_ID); fbq('track', 'PageView');
 }
 </script>
 
+<!-- Fonts: Bricolage Grotesque + Schibsted Grotesk (picked on fontesk.com, both OFL / free for commercial use) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --ink:#0B0D12; --ink-2:#0E1116; --panel:#121724; --card:#0C0F16;
-    --ivory:#F5F6F7; --gold:#D4A63C; --gold-hi:#EDCB6F; --gold-dark:#96762D; --gold-soft:rgba(212,166,60,.13);
-    --sand:#E9DAB6; --grey:#8A93A0; --grey-dim:#5b6270;
-    --green:#2EBD6B; --red:#E5484D;
-    --line:rgba(212,166,60,.16); --line-2:rgba(255,255,255,.06);
-    --radius:20px;
-    --disp:'Unbounded',sans-serif; --body:'Archivo',sans-serif; --mono:'Space Grotesk',sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--ink);color:var(--ivory);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:980px;margin:0 auto;padding:0 24px;}
+:root{
+  --ink:#0B0D12;--ink2:#0E1116;--card:#10141C;--panel:#141925;
+  --ivory:#F5F6F7;--sand:#E9DAB6;--grey:#8E97A5;--dim:#5C6473;
+  --gold:#D4A63C;--gold-hi:#EDCB6F;--gold-dark:#96762D;--gold-soft:rgba(212,166,60,.12);
+  --red:#E5484D;--green:#2EBD6B;
+  --line:rgba(212,166,60,.18);--line2:rgba(255,255,255,.07);
+  --disp:'Bricolage Grotesque',sans-serif;--body:'Schibsted Grotesk',sans-serif;
+  --r:22px;--ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--ivory);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+::selection{background:var(--gold);color:#191305}
 
-  header{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-2);}
-  nav{display:flex;align-items:center;justify-content:space-between;padding:13px 24px;max-width:980px;margin:0 auto;}
-  .brand{display:flex;align-items:center;gap:10px;}
-  .brand img{width:30px;height:30px;}
-  .brand .word{font-family:var(--disp);font-weight:700;font-size:14px;letter-spacing:.01em;}
-  .brand .word b{color:var(--gold);}
-  .navlink{font-family:var(--mono);font-size:12.5px;color:var(--grey);}
-  .navlink:hover{color:var(--ivory);}
+/* progress bar */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold-dark),var(--gold-hi));z-index:100;transition:width .1s linear}
 
-  .eyebrow{font-family:var(--mono);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-  .eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);}
-  h1{font-family:var(--disp);font-weight:700;font-size:clamp(30px,5vw,50px);line-height:1.1;letter-spacing:-.005em;margin-bottom:16px;}
-  h2{font-family:var(--disp);font-weight:700;font-size:clamp(21px,3vw,30px);line-height:1.15;margin-bottom:10px;}
-  .accent{color:var(--gold);}
-  p.lead{color:var(--grey);font-size:17px;max-width:620px;}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line2)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:13px 24px;max-width:1080px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px}.brand img{width:30px;height:30px}
+.brand .word{font-family:var(--disp);font-weight:800;font-size:15px;letter-spacing:.01em}.brand .word b{color:var(--gold)}
+.navcta{font-family:var(--disp);font-weight:700;font-size:13px;color:#191305;background:linear-gradient(180deg,var(--gold-hi),var(--gold));padding:9px 16px;border-radius:999px;transition:transform .2s var(--ease)}
+.navcta:hover{transform:translateY(-1px)}
 
-  #hero{padding:64px 0 34px;position:relative;overflow:hidden;}
-  .hero-glow{position:absolute;top:-240px;right:-160px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(212,166,60,.13) 0%,transparent 62%);pointer-events:none;}
-  .trust{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px;font-family:var(--mono);font-size:12.5px;color:var(--grey);}
-  .trust span{display:flex;align-items:center;gap:8px;}
-  .trust span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);}
+/* ticker */
+.tape{overflow:hidden;border-bottom:1px solid var(--line2);background:var(--ink2)}
+.tape-in{display:flex;width:max-content;animation:tape 38s linear infinite}
+.tape span{font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding:9px 22px;white-space:nowrap}
+.tape span::after{content:"◆";color:var(--gold-dark);margin-left:22px;font-size:9px;vertical-align:middle}
+@keyframes tape{to{transform:translateX(-50%)}}
 
-  section{padding:40px 0;}
-  .ex-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:26px;}
-  @media(min-width:760px){.ex-grid{grid-template-columns:repeat(2,1fr);}}
-  .ex-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column;position:relative;transition:transform .2s,box-shadow .2s;}
-  .ex-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(212,166,60,.35);}
-  .ex-card.lead{border-color:var(--gold);background:linear-gradient(170deg,rgba(212,166,60,.07),var(--card) 55%);}
-  .ex-badge{position:absolute;top:-11px;left:22px;background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:#191305;font-family:var(--mono);font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:4px 12px;}
-  .ex-name{font-family:var(--disp);font-weight:700;font-size:22px;margin-bottom:2px;}
-  .ex-tier{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey-dim);margin-bottom:14px;}
-  .ex-offer{font-weight:700;font-size:15.5px;color:var(--sand);background:var(--gold-soft);border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin-bottom:6px;line-height:1.4;}
-  .ex-terms{font-size:12px;color:var(--grey-dim);margin-bottom:14px;line-height:1.5;}
-  .ex-feats{list-style:none;margin-bottom:20px;flex:1;}
-  .ex-feats li{font-size:13.5px;color:var(--grey);padding:5px 0 5px 20px;position:relative;line-height:1.45;}
-  .ex-feats li::before{content:"→";position:absolute;left:0;color:var(--gold);font-family:var(--mono);}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--mono);font-weight:700;font-size:14.5px;padding:15px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:transform .18s,box-shadow .18s;white-space:nowrap;}
-  .btn-gold{background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:#191305;box-shadow:0 10px 28px -10px rgba(212,166,60,.6);}
-  .btn-gold:hover{transform:translateY(-2px);}
-  .btn-ghost{border-color:var(--line);color:var(--ivory);background:rgba(255,255,255,.02);}
-  .btn-ghost:hover{border-color:var(--gold);background:var(--gold-soft);}
-  .ex-card .btn{width:100%;}
-  .ex-sub{font-size:11.5px;color:var(--grey-dim);text-align:center;margin-top:8px;}
+/* type */
+.eyebrow{font-family:var(--disp);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold)}
+h1{font-family:var(--disp);font-weight:800;font-variation-settings:"wdth" 88,"opsz" 96;font-size:clamp(38px,6.2vw,72px);line-height:.98;letter-spacing:-.02em;margin-bottom:22px}
+h2{font-family:var(--disp);font-weight:800;font-variation-settings:"wdth" 90,"opsz" 60;font-size:clamp(30px,4.4vw,50px);line-height:1.02;letter-spacing:-.015em;margin-bottom:14px}
+h3{font-family:var(--disp);font-weight:700;font-size:20px;line-height:1.2}
+.accent{color:var(--gold)}
+.lead{color:var(--grey);font-size:18px;max-width:600px}
+.lead b{color:var(--ivory);font-weight:600}
+.lead a{color:var(--gold);border-bottom:1px solid var(--line)}
 
-  .steps{display:grid;grid-template-columns:1fr;gap:16px;margin-top:22px;}
-  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr);}}
-  .step{background:var(--card);border:1px solid var(--line-2);border-radius:16px;padding:20px;}
-  .step .k{font-family:var(--disp);font-weight:800;font-size:12px;background:var(--gold);color:#191305;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
-  .step h3{font-family:var(--body);font-weight:700;font-size:16px;margin-bottom:6px;}
-  .step p{font-size:13.5px;color:var(--grey);line-height:1.55;}
+/* word reveal */
+.w{display:inline-block;overflow:hidden;vertical-align:bottom}
+.w i{display:inline-block;font-style:normal;transform:translateY(110%);animation:wup .8s var(--ease) forwards}
+@keyframes wup{to{transform:translateY(0)}}
 
-  .risk{background:rgba(229,72,77,.06);border:1px solid rgba(229,72,77,.28);border-radius:14px;padding:18px 20px;margin-top:26px;font-size:13.5px;color:var(--grey);line-height:1.6;}
-  .risk b{color:#F2686C;}
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.on{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.22s}.rv.d3{transition-delay:.34s}
 
-  .faq{max-width:760px;margin-top:18px;}
-  .faq details{border-bottom:1px solid var(--line-2);padding:14px 0;}
-  .faq summary{cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:16px;}
-  .faq summary::after{content:"+";font-family:var(--mono);color:var(--gold);font-size:18px;}
-  .faq details[open] summary::after{content:"–";}
-  .faq p{color:var(--grey);font-size:14px;padding-top:10px;max-width:680px;line-height:1.6;}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--disp);font-weight:700;font-size:15px;padding:16px 28px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s,background .2s;white-space:nowrap;position:relative;overflow:hidden}
+.btn-gold{background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:#191305;box-shadow:0 12px 32px -12px rgba(212,166,60,.7)}
+.btn-gold::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
+.btn-gold:hover::after{transform:translateX(120%)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(212,166,60,.8)}
+.btn-ghost{border-color:var(--line);color:var(--ivory);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:var(--gold);background:var(--gold-soft)}
+.btn .arr{transition:transform .2s var(--ease)}.btn:hover .arr{transform:translateX(4px)}
 
-  .india{margin-top:26px;font-size:13px;color:var(--grey-dim);border:1px dashed var(--line-2);border-radius:12px;padding:14px 16px;}
-  .india a{color:var(--gold);font-weight:700;}
+/* hero */
+#hero{padding:72px 0 56px;position:relative;overflow:hidden}
+.orb{position:absolute;width:720px;height:720px;border-radius:50%;filter:blur(90px);opacity:.55;pointer-events:none;animation:orb 14s ease-in-out infinite alternate}
+.orb.a{background:radial-gradient(circle,rgba(212,166,60,.35),transparent 60%);top:-260px;right:-220px}
+.orb.b{background:radial-gradient(circle,rgba(229,72,77,.18),transparent 60%);bottom:-320px;left:-260px;animation-delay:-7s}
+@keyframes orb{to{transform:translate(-40px,30px) scale(1.08)}}
+.gridbg{position:absolute;inset:0;background-image:linear-gradient(var(--line2) 1px,transparent 1px),linear-gradient(90deg,var(--line2) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 30% 20%,#000 20%,transparent 70%);opacity:.5;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center;position:relative}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr}}
+.trust{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px;font-family:var(--disp);font-weight:600;font-size:13px;color:var(--grey)}
+.trust span{display:flex;align-items:center;gap:8px}.trust span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--gold-soft)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;align-items:center}
+.hero-note{font-size:12.5px;color:var(--dim)}
 
-  footer{border-top:1px solid var(--line-2);padding:40px 0 34px;background:var(--card);margin-top:20px;}
-  .foot-disclosure{font-size:12px;color:var(--grey-dim);line-height:1.65;margin-bottom:16px;}
-  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--mono);font-size:12px;color:var(--grey-dim);}
+/* terms scanner */
+.scan{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px 22px;box-shadow:0 40px 90px -40px rgba(0,0,0,.9);transform:rotate(-1.5deg);animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:rotate(-1.5deg) translateY(-8px)}}
+.scan .doc-h{display:flex;justify-content:space-between;align-items:center;font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:18px}
+.scan .doc-h b{color:var(--gold)}
+.ln{height:10px;border-radius:5px;background:rgba(255,255,255,.08);margin:11px 0;position:relative}
+.ln.s{width:62%}.ln.m{width:80%}.ln.l{width:94%}
+.ln.hit{background:rgba(212,166,60,.1)}
+.ln.hit::before{content:"";position:absolute;inset:0;border-radius:5px;background:var(--gold);transform:scaleX(0);transform-origin:left;animation:hit 6s var(--ease) infinite}
+.ln.hit .tag{position:absolute;left:0;top:-30px;background:var(--gold);color:#191305;font-family:var(--disp);font-weight:700;font-size:11px;letter-spacing:.06em;padding:4px 9px;border-radius:6px;opacity:0;transform:translateY(6px);animation:tag 6s var(--ease) infinite}
+.ln.h1::before,.ln.h1 .tag{animation-delay:.6s}.ln.h2::before,.ln.h2 .tag{animation-delay:2.2s}.ln.h3::before,.ln.h3 .tag{animation-delay:3.8s}
+@keyframes hit{0%,8%{transform:scaleX(0)}16%,80%{transform:scaleX(1)}90%,100%{transform:scaleX(0)}}
+@keyframes tag{0%,10%{opacity:0;transform:translateY(6px)}18%,80%{opacity:1;transform:none}90%,100%{opacity:0}}
+.beam{position:absolute;left:0;right:0;height:46px;background:linear-gradient(180deg,transparent,rgba(212,166,60,.16),transparent);animation:beam 6s linear infinite;pointer-events:none;border-radius:var(--r)}
+@keyframes beam{0%{top:8%}100%{top:88%}}
+.scan .foot{display:flex;justify-content:space-between;margin-top:20px;font-size:12px;color:var(--dim)}
+.scan .foot b{color:var(--red);font-family:var(--disp)}
+
+/* cost cards */
+section{padding:72px 0}
+.grid3{display:grid;grid-template-columns:1fr;gap:16px;margin-top:34px}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.cost{background:var(--card);border:1px solid var(--line2);border-radius:var(--r);padding:26px 24px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s var(--ease)}
+.cost:hover{border-color:var(--line);transform:translateY(-4px)}
+.cost .n{font-family:var(--disp);font-weight:800;font-size:12px;color:var(--gold);letter-spacing:.14em;margin-bottom:14px}
+.cost p{color:var(--grey);font-size:15px;margin-top:8px}
+.meter{height:8px;background:rgba(255,255,255,.07);border-radius:4px;margin:18px 0 8px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold-dark),var(--gold-hi));border-radius:4px;transition:width 1.4s var(--ease) .2s}
+.on .meter i{width:var(--v)}
+.meter-l{display:flex;justify-content:space-between;font-family:var(--disp);font-size:12px;color:var(--dim)}
+.ring{width:86px;height:86px;border-radius:50%;background:conic-gradient(var(--gold) var(--deg,0deg),rgba(255,255,255,.07) 0);display:grid;place-items:center;margin:16px 0 4px;transition:--deg 1.5s;position:relative}
+.ring::after{content:attr(data-l);position:absolute;inset:8px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-family:var(--disp);font-weight:800;font-size:15px}
+.stack{display:flex;gap:6px;align-items:flex-end;height:64px;margin:16px 0 6px}
+.stack i{flex:1;background:rgba(255,255,255,.08);border-radius:4px 4px 0 0;height:var(--h);transform:scaleY(0);transform-origin:bottom;transition:transform 1s var(--ease)}
+.stack i.g{background:linear-gradient(180deg,var(--gold-hi),var(--gold-dark))}
+.on .stack i{transform:scaleY(1)}
+.on .stack i:nth-child(2){transition-delay:.12s}.on .stack i:nth-child(3){transition-delay:.24s}.on .stack i:nth-child(4){transition-delay:.36s}
+.fineline{margin-top:18px;font-size:13px;color:var(--dim)}
+
+/* shift + marquee */
+#shift{background:var(--ink2);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);overflow:hidden}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;max-width:640px}
+.stat{border-left:2px solid var(--gold);padding-left:14px}
+.stat b{display:block;font-family:var(--disp);font-weight:800;font-size:34px;line-height:1;letter-spacing:-.02em}
+.stat span{font-size:12.5px;color:var(--grey)}
+.mq{margin-top:48px;overflow:hidden;transform:rotate(-2deg) scale(1.04)}
+.mq-in{display:flex;gap:18px;width:max-content;animation:mq 42s linear infinite}
+.mq:hover .mq-in{animation-play-state:paused}
+.mq img{width:220px;border-radius:14px;border:1px solid var(--line2);box-shadow:0 30px 60px -30px rgba(0,0,0,.9);transition:transform .4s var(--ease)}
+.mq img:hover{transform:translateY(-8px) scale(1.03)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* compare */
+.ex-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}
+@media(min-width:800px){.ex-grid{grid-template-columns:1fr 1fr}}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;position:relative;transition:transform .3s var(--ease),box-shadow .3s}
+.ex:hover{transform:translateY(-5px);box-shadow:0 30px 60px -30px rgba(212,166,60,.4)}
+.ex.lead-x{border-color:var(--gold);background:linear-gradient(165deg,rgba(212,166,60,.09),var(--card) 55%)}
+.ex.lead-x::before{content:"";position:absolute;inset:-1px;border-radius:var(--r);padding:1px;background:linear-gradient(120deg,var(--gold-hi),transparent 40%,transparent 60%,var(--gold));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:glow 4s linear infinite;pointer-events:none}
+@keyframes glow{50%{opacity:.35}}
+.badge{position:absolute;top:-12px;left:24px;background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:#191305;font-family:var(--disp);font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:5px 12px}
+.ex .name{font-family:var(--disp);font-weight:800;font-size:28px;letter-spacing:-.01em}
+.ex .tier{font-family:var(--disp);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:2px 0 18px}
+.offer{background:var(--gold-soft);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px}
+.offer b{display:block;font-family:var(--disp);font-weight:800;font-size:22px;letter-spacing:-.01em;color:var(--sand);line-height:1.1}
+.offer span{display:block;font-size:12.5px;color:var(--grey);margin-top:6px}
+.takes{list-style:none;margin:6px 0 22px;flex:1}
+.takes li{font-size:14.5px;color:var(--grey);padding:7px 0 7px 24px;position:relative;border-bottom:1px dashed var(--line2)}
+.takes li::before{content:"→";position:absolute;left:0;color:var(--gold);font-family:var(--disp)}
+.takes li b{color:var(--ivory);font-weight:600}
+.ex .btn{width:100%}
+.ex .sub{font-size:11.5px;color:var(--dim);text-align:center;margin-top:9px}
+.risk{background:rgba(229,72,77,.06);border:1px solid rgba(229,72,77,.3);border-radius:16px;padding:18px 20px;margin-top:24px;font-size:14px;color:var(--grey);line-height:1.6}
+.risk b{color:#F2686C}
+
+/* proof */
+.proof{display:grid;grid-template-columns:1fr;gap:16px;margin-top:34px}
+@media(min-width:760px){.proof{grid-template-columns:1fr 1fr}}
+.pf{background:var(--card);border:1px solid var(--line2);border-radius:var(--r);padding:26px 24px}
+.pf .k{font-family:var(--disp);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.pf big{display:block;font-family:var(--disp);font-weight:800;font-size:40px;line-height:1;letter-spacing:-.02em;margin-bottom:8px}
+.pf p{color:var(--grey);font-size:14.5px}
+.pf p a{color:var(--gold)}
+.nots{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.nots span{font-family:var(--disp);font-weight:600;font-size:13px;color:var(--grey);border:1px solid var(--line2);border-radius:999px;padding:8px 14px}
+.nots span::before{content:"✕ ";color:var(--red)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:1fr;gap:16px;margin-top:30px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--card);border:1px solid var(--line2);border-radius:18px;padding:22px}
+.step .k{font-family:var(--disp);font-weight:800;font-size:13px;background:var(--gold);color:#191305;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;margin-bottom:14px}
+.step p{font-size:14.5px;color:var(--grey);margin-top:6px}
+
+/* faq */
+.faq{max-width:760px;margin-top:22px}
+.faq details{border-bottom:1px solid var(--line2);padding:16px 0}
+.faq summary{cursor:pointer;font-family:var(--disp);font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::after{content:"+";color:var(--gold);font-size:22px;transition:transform .3s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{color:var(--grey);font-size:15px;padding-top:10px;max-width:680px}
+.india{margin-top:26px;font-size:13.5px;color:var(--dim);border:1px dashed var(--line2);border-radius:14px;padding:14px 16px}
+.india a{color:var(--gold);font-weight:600}
+
+/* final */
+#final{background:radial-gradient(ellipse at 50% 120%,rgba(212,166,60,.18),transparent 60%),var(--ink2);border-top:1px solid var(--line2);text-align:center}
+#final .lead{margin:0 auto}
+#final .hero-cta{justify-content:center}
+
+/* sticky mobile */
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(11,13,18,.9);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;transform:translateY(110%);transition:transform .4s var(--ease)}
+.stick.on{transform:none}
+.stick .t{flex:1;font-size:12.5px;color:var(--grey);line-height:1.3}
+.stick .t b{display:block;color:var(--ivory);font-family:var(--disp);font-size:13.5px}
+.stick .btn{padding:12px 18px;font-size:13.5px}
+@media(min-width:900px){.stick{display:none}}
+
+footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--card)}
+@media(min-width:900px){footer{padding-bottom:40px}}
+.disc{font-size:12px;color:var(--dim);line-height:1.65;margin-bottom:16px}
+.fb{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--disp);font-size:12px;color:var(--dim)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .w i{transform:none}.rv{opacity:1;transform:none}.on .meter i{width:var(--v)}.stack i{transform:none}
+}
 </style>
 </head>
 <body>
+<div id="prog"></div>
 
 <header>
   <nav>
-    <a class="brand" href="/">
-      <img src="/assets/brand/icon-dark.png" alt="Block & Bull">
-      <span class="word">BLOCK &amp; <b>BULL</b></span>
-    </a>
-    <a class="navlink" href="/articles/">Guides →</a>
+    <a class="brand" href="/"><img src="/assets/brand/icon-dark.png" alt="Block &amp; Bull"><span class="word">BLOCK &amp; <b>BULL</b></span></a>
+    <a class="navcta" href="#compare">Compare the offers</a>
   </nav>
 </header>
 
+<div class="tape" aria-hidden="true"><div class="tape-in" id="tape"></div></div>
+
 <main>
-  <section id="hero">
-    <div class="hero-glow"></div>
-    <div class="wrap">
-      <div class="eyebrow">Start here</div>
-      <h1>Pick an exchange by the terms, <span class="accent">not the ad.</span></h1>
-      <p class="lead">Two licensed exchanges, their current welcome offers, and the fine print read for you. We make zero price predictions. We compare terms.</p>
-      <div class="trust">
-        <span>Zero price predictions</span>
-        <span>Terms read, not summarised</span>
-        <span>Referral links, disclosed</span>
+<!-- HERO: pain -->
+<section id="hero">
+  <div class="orb a"></div><div class="orb b"></div><div class="gridbg"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Before you sign up anywhere</div>
+      <h1 id="h1">The bonus in the ad and the bonus in the terms are two different numbers.</h1>
+      <p class="lead rv">One US exchange prints "up to $2,000" in its hero and <b>"average reward is approximately $25"</b> in its footnote. Every exchange runs the same play. We read the terms on two licensed exchanges so you deposit knowing what the reward takes.</p>
+      <div class="trust rv d1"><span>Zero price predictions</span><span>Terms quoted, not summarised</span><span>Referral links, labelled</span></div>
+      <div class="hero-cta rv d2">
+        <a class="btn btn-gold" href="#compare">See what each offer takes <span class="arr">↓</span></a>
+        <span class="hero-note">2-minute read · nothing to sign up for here</span>
       </div>
     </div>
-  </section>
-
-  <section id="exchanges" style="padding-top:8px;">
-    <div class="wrap">
-      <h2>The two we'd start with.</h2>
-      <p class="lead">Both publish proof-of-reserves and hold licences or registrations in multiple jurisdictions. Offer amounts are set by the exchange and depend on deposit size and activity. Read the terms on their site before you deposit.</p>
-
-      <div class="ex-grid">
-        <div class="ex-card lead">
-          <div class="ex-badge">Our pick to start</div>
-          <div class="ex-name">Bybit</div>
-          <div class="ex-tier">Derivatives &amp; spot · proof-of-reserves published</div>
-          <div class="ex-offer">Up to $30,000 in deposit rewards</div>
-          <div class="ex-terms">Tiered by deposit and trading activity. Terms set by Bybit and may change without notice.</div>
-          <ul class="ex-feats">
-            <li>Deep derivatives and spot liquidity</li>
-            <li>Fast KYC, wide asset coverage</li>
-            <li>Replenished all user funds within 72 hours after its Feb 2025 breach, with no customer losses</li>
-          </ul>
-          <a class="btn btn-gold" data-ex="bybit" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener sponsored">See Bybit's offer ↗</a>
-          <div class="ex-sub">Referral link · opens bybit.com</div>
-        </div>
-
-        <div class="ex-card">
-          <div class="ex-name">Binance</div>
-          <div class="ex-tier">Largest by volume · proof-of-reserves published</div>
-          <div class="ex-offer">New-user USDC rewards + fee rebate</div>
-          <div class="ex-terms">Rewards vary by region and activity. Terms set by Binance and may change without notice.</div>
-          <ul class="ex-feats">
-            <li>Largest global exchange by volume</li>
-            <li>Widest coin listing selection</li>
-            <li>Best for altcoin depth</li>
-          </ul>
-          <a class="btn btn-ghost" data-ex="binance" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_MTMN5&utm_source=referral_entrance" target="_blank" rel="noopener sponsored">See Binance's offer ↗</a>
-          <div class="ex-sub">Referral link · opens binance.com</div>
-        </div>
-      </div>
-
-      <div class="risk"><b>Read this before you deposit.</b> Cryptocurrency is volatile and high-risk. You can lose your entire investment. Welcome rewards are set by the exchanges, usually tied to deposit size and trading volume, and can change or be withdrawn. Nothing on this page is financial advice or a recommendation to buy, sell, or hold any asset. Both links above are referral links and we may earn a commission at no extra cost to you.</div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap">
-      <h2>Three steps. <span class="accent">No funnel.</span></h2>
-      <div class="steps">
-        <div class="step"><div class="k">1</div><h3>Compare the terms first</h3><p>Every welcome offer has conditions. Open the exchange's own terms page and read what unlocks the reward before you sign up anywhere, including through us.</p></div>
-        <div class="step"><div class="k">2</div><h3>Verify, then deposit small</h3><p>Every licensed exchange requires identity verification before withdrawal. That's normal. Start with an amount you're fully comfortable losing.</p></div>
-        <div class="step"><div class="k">3</div><h3>Follow the desk</h3><p>We publish daily market breakdowns and plain-English guides. Context before you trade, never signals to copy.</p></div>
+    <div class="rv d2">
+      <div class="scan" aria-hidden="true">
+        <div class="beam"></div>
+        <div class="doc-h"><span>Welcome rewards · <b>terms &amp; conditions</b></span><span>p.1 of 7</span></div>
+        <div class="ln l"></div><div class="ln m"></div>
+        <div class="ln hit h1 l"><span class="tag">DEPOSIT TIER</span></div>
+        <div class="ln s"></div><div class="ln l"></div>
+        <div class="ln hit h2 m"><span class="tag">VOLUME TARGET</span></div>
+        <div class="ln m"></div><div class="ln s"></div>
+        <div class="ln hit h3 l"><span class="tag">EXPIRES IN 30 DAYS</span></div>
+        <div class="ln m"></div>
+        <div class="foot"><span>Headline offer: up to $2,000</span><span>Average paid: <b>≈ $25</b></span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="faq" style="padding-top:10px;">
-    <div class="wrap">
-      <h2>Straight answers.</h2>
-      <div class="faq">
-        <details><summary>Are the welcome rewards real money I get immediately?</summary><p>No. They are the exchanges' own promotional programs, typically released in tiers as you deposit and trade, with expiry dates and volume conditions. The headline figure is the maximum available under the program, not a sign-up gift. Read the terms on the exchange's site.</p></details>
-        <details><summary>Is this financial advice?</summary><p>No. Block &amp; Bull is an educational publisher. We compare exchange terms and explain how things work. We don't tell you what to buy or when. Trading is high-risk and you can lose everything you put in.</p></details>
-        <details><summary>How do you make money?</summary><p>Through referral links. If you sign up through one, the exchange may pay us a commission at no extra cost to you. We say so every time a link appears, and we only link exchanges that publish proof-of-reserves.</p></details>
-        <details><summary>Which countries can use these exchanges?</summary><p>Each exchange maintains its own restricted-country list, and it changes. Check availability for your country on the exchange's site before you register. Some jurisdictions, including the US, UK, Canada and Japan, restrict or block one or both of these platforms.</p></details>
+<!-- COST -->
+<section id="cost">
+  <div class="wrap">
+    <div class="eyebrow rv">What the headline number hides</div>
+    <h2 class="rv d1">Three conditions sit between you and the number in the ad.</h2>
+    <p class="lead rv d2">Every welcome program we've read runs on the same three levers. None of them are secret. They're just on page four.</p>
+    <div class="grid3">
+      <div class="cost rv">
+        <div class="n">01 · DEPOSIT TIERS</div>
+        <h3>The full reward needs the full deposit.</h3>
+        <div class="stack"><i style="--h:22%"></i><i style="--h:40%"></i><i style="--h:65%"></i><i class="g" style="--h:100%"></i></div>
+        <div class="meter-l"><span>$100</span><span>$1k</span><span>$10k</span><span>top tier</span></div>
+        <p>Deposit $100 and you're in the bottom tier. The headline figure is the top of the ladder.</p>
       </div>
-      <div class="india">In India? Exchange access there depends on FIU-IND registration, and two well-known offshore exchanges were ordered blocked in September 2026. <a href="/crypto-exchanges-blocked-india-fiu-2026/">Read which ones, and what it means for your funds →</a></div>
+      <div class="cost rv d1">
+        <div class="n">02 · VOLUME TARGETS</div>
+        <h3>Most rewards pay as you trade, not when you join.</h3>
+        <div class="meter"><i style="--v:28%"></i></div>
+        <div class="meter-l"><span>your volume</span><span>target</span></div>
+        <p>No trades, no reward. Read the volume line before you read the bonus line.</p>
+      </div>
+      <div class="cost rv d2">
+        <div class="n">03 · EXPIRY CLOCKS</div>
+        <h3>Miss the window and it goes back to zero.</h3>
+        <div class="ring" data-l="30d" style="--deg:300deg"></div>
+        <p>Most rewards expire within 30 days of sign-up. The clock starts before your first deposit lands.</p>
+      </div>
     </div>
-  </section>
+    <p class="fineline rv">Exact tiers, targets and windows change without notice. Each card below links the live terms page. Read it before you fund.</p>
+  </div>
+</section>
+
+<!-- SHIFT -->
+<section id="shift">
+  <div class="wrap">
+    <div class="eyebrow rv">The shift</div>
+    <h2 class="rv d1">Pick an exchange by the terms, <span class="accent">not the ad.</span></h2>
+    <p class="lead rv d2">Block &amp; Bull is a market desk, not a bonus funnel. We publish a daily breakdown of crypto and Indian markets with every source linked. Exchanges get the same treatment: read the document, quote it, link it.</p>
+    <div class="stats rv d3">
+      <div class="stat"><b data-count="0">0</b><span>price predictions, ever</span></div>
+      <div class="stat"><b data-count="2">0</b><span>exchanges we link, both with proof-of-reserves</span></div>
+      <div class="stat"><b data-count="100" data-suffix="%">0</b><span>of referral links labelled as referral links</span></div>
+    </div>
+  </div>
+  <div class="mq" aria-hidden="true"><div class="mq-in" id="mq"></div></div>
+</section>
+
+<!-- COMPARE / ASK -->
+<section id="compare">
+  <div class="wrap">
+    <div class="eyebrow rv">The two we'd start with</div>
+    <h2 class="rv d1">Two licensed exchanges. The reward, and what it takes.</h2>
+    <p class="lead rv d2">Both publish proof-of-reserves. Both set their own offer amounts. Both change them. What follows is what their terms say today.</p>
+    <div class="ex-grid">
+      <div class="ex lead-x rv">
+        <div class="badge">Our pick to start</div>
+        <div class="name">Bybit</div>
+        <div class="tier">Spot &amp; derivatives · proof-of-reserves published</div>
+        <div class="offer"><b>Up to $30,000 in deposit rewards</b><span>Program maximum. Tiered by deposit size and trading volume. Set by Bybit, changes without notice.</span></div>
+        <ul class="takes">
+          <li><b>What it takes:</b> verify identity, deposit, trade to each tier's volume target within the window</li>
+          <li><b>Track record:</b> after its Feb 2025 hack, Bybit replenished all user funds within 72 hours. No customer lost money</li>
+          <li><b>Best for:</b> derivatives depth, fast KYC, wide asset list</li>
+        </ul>
+        <a class="btn btn-gold" data-ex="bybit" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener sponsored">Open Bybit's offer and terms <span class="arr">↗</span></a>
+        <div class="sub">Referral link · opens bybit.com · read the terms page first</div>
+      </div>
+      <div class="ex rv d1">
+        <div class="name">Binance</div>
+        <div class="tier">Largest by volume · proof-of-reserves published</div>
+        <div class="offer"><b>New-user USDC rewards + fee rebate</b><span>Varies by region and activity. Set by Binance, changes without notice.</span></div>
+        <ul class="takes">
+          <li><b>What it takes:</b> verify identity, complete the listed tasks, trade within the reward window</li>
+          <li><b>Track record:</b> SAFU emergency fund holds 15,000 BTC as of Feb 2026; Binance reports $229M in user funds recovered</li>
+          <li><b>Best for:</b> altcoin depth, the widest listing selection</li>
+        </ul>
+        <a class="btn btn-ghost" data-ex="binance" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_MTMN5&utm_source=referral_entrance" target="_blank" rel="noopener sponsored">Open Binance's offer and terms <span class="arr">↗</span></a>
+        <div class="sub">Referral link · opens binance.com · read the terms page first</div>
+      </div>
+    </div>
+    <div class="risk rv"><b>Read this before you deposit.</b> Cryptocurrency is volatile and high-risk. You can lose your entire investment. Welcome rewards are set by the exchanges, tied to deposit size and trading volume, and can change or be withdrawn. Nothing on this page is financial advice or a recommendation to buy, sell or hold any asset. Both links are referral links. We may earn a commission at no extra cost to you.</div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="wrap">
+    <div class="eyebrow rv">Receipts</div>
+    <h2 class="rv d1">What we can back up. And what we won't say.</h2>
+    <div class="proof">
+      <div class="pf rv"><div class="k">Bybit · Feb 2025</div><big>72 hours</big><p>Time it took Bybit to replenish all user funds after the largest exchange hack on record. Withdrawals stayed open throughout.</p></div>
+      <div class="pf rv d1"><div class="k">Binance · SAFU fund</div><big>15,000 BTC</big><p>Reserve held in Binance's Secure Asset Fund for Users as of February 2026, published with its on-chain wallet address on <a href="https://www.binance.com/en" target="_blank" rel="noopener">binance.com</a>.</p></div>
+      <div class="pf rv d2"><div class="k">The category · fine print</div><big>$2,000 → ≈$25</big><p>Coinbase's own homepage footnote, September 2026: headline offer versus average reward. The gap is the whole reason this page exists.</p></div>
+      <div class="pf rv d3"><div class="k">Block &amp; Bull · every post</div><big>Sources linked</big><p>Daily market cards since August 2026, each with data timestamps and sources in the caption. Scroll up to see the last week.</p></div>
+    </div>
+    <div class="nots rv"><span>No price predictions</span><span>No PnL screenshots</span><span>No paid reviews</span><span>No unlabelled links</span></div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow rv">If you go ahead</div>
+    <h2 class="rv d1">Three steps. <span class="accent">No funnel.</span></h2>
+    <div class="steps">
+      <div class="step rv"><div class="k">1</div><h3>Open the terms first</h3><p>Both buttons above land on the offer page. Find the terms link on it and read the tier table before you register.</p></div>
+      <div class="step rv d1"><div class="k">2</div><h3>Verify, then deposit small</h3><p>Every licensed exchange requires identity verification before withdrawal. Start with an amount you can afford to lose in full.</p></div>
+      <div class="step rv d2"><div class="k">3</div><h3>Follow the desk</h3><p>We publish a market breakdown every day at <a href="https://x.com/blocknbull" style="color:var(--gold)">@blocknbull</a>. Context before you trade. Never signals to copy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow rv">Straight answers</div>
+    <div class="faq rv d1">
+      <details><summary>Is the welcome reward cash I get on sign-up?</summary><p>No. It's the exchange's promotional program, released in tiers as you deposit and trade, with an expiry date. The headline figure is the program maximum. Read the tier table on the exchange's terms page.</p></details>
+      <details><summary>Is this financial advice?</summary><p>No. Block &amp; Bull is an educational publisher. We compare exchange terms and explain how markets work. We don't tell you what to buy or when. Trading is high-risk and you can lose everything you put in.</p></details>
+      <details><summary>How does Block &amp; Bull make money?</summary><p>Referral links. If you sign up through one, the exchange may pay us a commission at no extra cost to you. We label every link, and we only link exchanges that publish proof-of-reserves.</p></details>
+      <details><summary>Can I use these exchanges in my country?</summary><p>Each exchange keeps its own restricted-country list, and it changes. Check eligibility on the exchange's site before you register. The US, UK, Canada and Japan restrict or block one or both.</p></details>
+    </div>
+    <div class="india rv">In India? Access depends on FIU-IND registration, and two offshore exchanges were ordered blocked in September 2026. <a href="/crypto-exchanges-blocked-india-fiu-2026/">Which ones, and what it means for your funds →</a></div>
+  </div>
+</section>
+
+<!-- FINAL ASK -->
+<section id="final">
+  <div class="wrap">
+    <h2 class="rv">Start with the terms. <span class="accent">Then decide.</span></h2>
+    <p class="lead rv d1">Two offers, both linked to their own terms pages, both labelled as referral links.</p>
+    <div class="hero-cta rv d2">
+      <a class="btn btn-gold" data-ex="bybit" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener sponsored">Open Bybit's offer and terms <span class="arr">↗</span></a>
+      <a class="btn btn-ghost" data-ex="binance" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_MTMN5&utm_source=referral_entrance" target="_blank" rel="noopener sponsored">Open Binance's offer <span class="arr">↗</span></a>
+    </div>
+  </div>
+</section>
 </main>
+
+<div class="stick" id="stick">
+  <div class="t"><b>Bybit · up to $30,000 in deposit rewards</b>Tiered · terms apply · referral link</div>
+  <a class="btn btn-gold" data-ex="bybit" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener sponsored">Open offer ↗</a>
+</div>
 
 <footer>
   <div class="wrap">
-    <p class="foot-disclosure">This page contains referral links to third-party exchanges. We may earn a commission if you sign up through them, at no extra cost to you. Offers are set by the exchanges and may change or end without notice. Nothing on this page is financial, investment, or tax advice; it is educational content only and not a recommendation to buy, sell, or hold any asset. Cryptocurrency is volatile and high-risk and you can lose your entire investment. Exchange availability varies by country; confirm eligibility on the exchange's own site. Do your own research and consult a qualified professional before making financial decisions.</p>
-    <div class="foot-bottom">
-      <span>© 2026 Block &amp; Bull</span>
-      <span>Not financial advice.</span>
-    </div>
+    <p class="disc">This page contains referral links to third-party exchanges. We may earn a commission if you sign up through them, at no extra cost to you. Offers are set by the exchanges and may change or end without notice. Nothing on this page is financial, investment or tax advice; it is educational content only and not a recommendation to buy, sell or hold any asset. Cryptocurrency is volatile and high-risk and you can lose your entire investment. Exchange availability varies by country; confirm eligibility on the exchange's own site. Third-party figures quoted from the named companies' public pages on 17 September 2026. Do your own research and consult a qualified professional before making financial decisions.</p>
+    <div class="fb"><span>© 2026 Block &amp; Bull</span><span>Not financial advice.</span></div>
   </div>
 </footer>
 
 <script>
-/* Outbound affiliate click → Meta Pixel custom event (inert until a Pixel ID is set). */
-document.querySelectorAll('a[data-ex]').forEach(a => {
-  a.addEventListener('click', () => {
-    if (window.fbq) { fbq('trackCustom', 'AffiliateClick', { exchange: a.dataset.ex }); }
-  });
-});
+(function(){
+  // ticker
+  var words=['Block & Bull','Zero price calls','Terms quoted','Receipts','Sources linked','Referral links labelled','No PnL screenshots','Timestamped'];
+  var t=document.getElementById('tape'),s='';for(var r=0;r<2;r++){words.forEach(function(w){s+='<span>'+w+'</span>'})}t.innerHTML=s;
+  // marquee of real daily cards
+  var imgs=['card_sep17.webp','card_sep17b.webp','card_sep15.webp','card_sep15b.webp','card_sep14.webp'];
+  var m=document.getElementById('mq'),h='';for(var r2=0;r2<2;r2++){imgs.forEach(function(i){h+='<img src="/start/img/'+i+'" alt="" loading="lazy" width="220" height="275">'})}m.innerHTML=h;
+  // headline word reveal
+  var h1=document.getElementById('h1'),txt=h1.textContent.split(' ');
+  h1.innerHTML=txt.map(function(w,i){return '<span class="w"><i style="animation-delay:'+(i*55)+'ms">'+w+'</i></span>'}).join(' ');
+  // scroll reveal + counters
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);
+    e.target.querySelectorAll('[data-count]').forEach(count);if(e.target.hasAttribute('data-count'))count(e.target);}})},{threshold:.18});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  function count(el){var to=+el.dataset.count,suf=el.dataset.suffix||'',t0=null;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/1100,1);p=1-Math.pow(1-p,3);el.textContent=Math.round(to*p)+suf;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+  // progress + sticky
+  var prog=document.getElementById('prog'),stick=document.getElementById('stick'),hero=document.getElementById('hero');
+  addEventListener('scroll',function(){var d=document.documentElement,p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;prog.style.width=p+'%';stick.classList.toggle('on',scrollY>hero.offsetHeight*0.9)},{passive:true});
+  // affiliate click → pixel
+  document.querySelectorAll('a[data-ex]').forEach(function(a){a.addEventListener('click',function(){if(window.fbq)fbq('trackCustom','AffiliateClick',{exchange:a.dataset.ex})})});
+})();
 </script>
 </body>
 </html>
