@@ -162,6 +162,7 @@ section{padding:72px 0}
 .stat{border-left:2px solid var(--gold);padding-left:14px}
 .stat b{display:block;font-family:var(--disp);font-weight:800;font-size:34px;line-height:1;letter-spacing:-.02em}
 .stat span{font-size:12.5px;color:var(--grey)}
+@media(max-width:600px){.stats{gap:10px}.stat{padding-left:10px}.stat b{font-size:28px}.stat span{font-size:11px;line-height:1.35;display:block;margin-top:4px}}
 .mq{margin-top:48px;overflow:hidden;transform:rotate(-2deg) scale(1.04)}
 .mq-in{display:flex;gap:18px;width:max-content;animation:mq 42s linear infinite}
 .mq:hover .mq-in{animation-play-state:paused}
@@ -329,8 +330,8 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
     <p class="lead rv d2">Block &amp; Bull is a market desk, not a bonus funnel. We publish a daily breakdown of crypto and Indian markets with every source linked. Exchanges get the same treatment: read the document, quote it, link it.</p>
     <div class="stats rv d3">
       <div class="stat"><b data-count="0">0</b><span>price predictions, ever</span></div>
-      <div class="stat"><b data-count="2">0</b><span>exchanges we link, both with proof-of-reserves</span></div>
-      <div class="stat"><b data-count="100" data-suffix="%">0</b><span>of referral links labelled as referral links</span></div>
+      <div class="stat"><b data-count="2">0</b><span>exchanges linked, both with proof-of-reserves</span></div>
+      <div class="stat"><b data-count="100" data-suffix="%">0</b><span>of referral links labelled</span></div>
     </div>
   </div>
   <div class="mq" aria-hidden="true"><div class="mq-in" id="mq"></div></div>
