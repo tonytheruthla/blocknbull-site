@@ -186,6 +186,22 @@ section{padding:72px 0}
 .pulse::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--gold);animation:pulse 2s ease-out infinite}
 @keyframes pulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.8);opacity:0}}
 
+/* wins wall */
+#wins{padding-top:0;overflow:hidden}
+.wins-rows{margin-top:34px;display:flex;flex-direction:column;gap:16px}
+.wins-row{overflow:hidden;position:relative}
+.wins-track{display:inline-flex;gap:16px;width:max-content;animation:mq 60s linear infinite}
+.wins-track.rev{animation:mqrev 60s linear infinite}
+@keyframes mqrev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.wins-row:hover .wins-track{animation-play-state:paused}
+.win-card{width:210px;flex-shrink:0;border-radius:14px;overflow:hidden;cursor:zoom-in;border:1px solid var(--line2);background:var(--card);transition:transform .25s var(--ease),border-color .25s,box-shadow .25s}
+.win-card:hover{transform:translateY(-5px) scale(1.02);border-color:var(--gold);box-shadow:0 18px 44px -16px rgba(212,166,60,.35)}
+.win-card img{width:100%;height:auto;aspect-ratio:640/852;display:block}
+.warn{margin-top:26px;font-size:12.5px;color:var(--grey);border:1px solid var(--line2);background:rgba(255,255,255,.02);border-radius:12px;padding:14px 18px;line-height:1.6}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:200;cursor:zoom-out;padding:24px}
+#lightbox.open{display:grid}
+#lightbox img{max-width:min(92vw,520px);max-height:90vh;border-radius:14px;border:1px solid var(--line)}
+
 /* compare */
 .ex-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}
 @media(min-width:800px){.ex-grid{grid-template-columns:1fr 1fr}}
@@ -283,7 +299,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
       <div class="eyebrow">Join and earn · Bybit · WEEX</div>
       <h1 id="h1">Join and earn 20% of your trading fees back. Plus up to $30,000 in deposit rewards.</h1>
       <p class="lead rv"><b>Register on Bybit or WEEX through Block &amp; Bull.</b> The exchange sets a 20% fee rebate on your account from day one and pays it on every eligible trade. Deposit rewards on top, with the tiers quoted.</p>
-      <div class="trust rv d1"><span>Paid by the exchange, not by us</span><span>No tiers, no expiry on the rebate</span><span>Your account stays yours</span></div>
+      <div class="trust rv d1"><span>Paid by the exchange</span><span>Rebate never expires</span><span>Your account stays yours</span></div>
       <div class="hero-cta rv d2">
         <a class="btn btn-gold" href="#compare">Join now <span class="arr">↓</span></a>
         <span class="hero-note">Pick Bybit or WEEX · rebate live on your first trade</span>
@@ -306,52 +322,38 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   </div>
 </section>
 
-<!-- COST -->
+<!-- DEPOSIT BONUS -->
 <section id="cost">
   <div class="wrap">
-    <div class="eyebrow rv">Join and earn</div>
-    <h2 class="rv d1">You trade. The exchange keeps 80% of the fee. You earn 20% back.</h2>
-    <p class="lead rv d2">We earn a referral commission on your fees. We share it with you by setting a rebate on your account at the exchange. No form, no UID linking, no monthly payout from us.</p>
+    <div class="eyebrow rv">Deposit and earn</div>
+    <h2 class="rv d1">New to Bybit? <span class="accent">Deposit and earn up to $30,000.</span></h2>
+    <p class="lead rv d2">Join through our link, make your first deposit, and Bybit's welcome rewards start paying out. The 20% fee rebate is added on top, for as long as you trade.</p>
     <div class="grid3">
       <div class="cost rv">
-        <div class="n">01 · THE MATH</div>
-        <h3>$1.10 back on every $10,000 traded.</h3>
-        <div class="stack"><i style="--h:22%"></i><i style="--h:40%"></i><i style="--h:65%"></i><i class="g" style="--h:100%"></i></div>
-        <div class="meter-l"><span>$10k · $1.10</span><span>$100k · $11</span><span>$1M · $110</span><span>per month</span></div>
-        <p>Bybit's standard 0.055% futures taker fee on $10,000 is $5.50. Twenty percent of that comes back. It scales with your volume, every month.</p>
+        <div class="n">01 · JOIN</div>
+        <h3>Register through our Bybit link.</h3>
+        <div class="meter"><i style="--v:100%"></i></div>
+        <div class="meter-l"><span>register</span><span>rebate active</span></div>
+        <p>Takes two minutes. The 20% fee rebate is set on your account the moment you sign up.</p>
       </div>
       <div class="cost rv d1">
-        <div class="n">02 · SET ON DAY ONE</div>
-        <h3>The rebate is on your account before your first trade.</h3>
-        <div class="meter"><i style="--v:100%"></i></div>
-        <div class="meter-l"><span>register via our link</span><span>rebate active</span></div>
-        <p>Register through the Bybit or WEEX link below and the 20% is configured on the exchange side. Nothing to claim later.</p>
+        <div class="n">02 · DEPOSIT</div>
+        <h3>Fund your account. Rewards come in tiers.</h3>
+        <div class="stack"><i style="--h:25%"></i><i style="--h:45%"></i><i style="--h:70%"></i><i class="g" style="--h:100%"></i></div>
+        <div class="meter-l"><span>tier 1</span><span>tier 2</span><span>tier 3</span><span>up to $30,000</span></div>
+        <p>The more you deposit and trade, the higher the tier. Bybit shows your progress inside the app.</p>
       </div>
       <div class="cost rv d2">
-        <div class="n">03 · NO EXPIRY</div>
-        <h3>Welcome bonuses expire. The rebate doesn't.</h3>
+        <div class="n">03 · EARN</div>
+        <h3>20% of every trading fee comes back.</h3>
         <div class="ring" data-l="20%" style="--deg:72deg"></div>
-        <p>Deposit rewards run on tiers and 30-day windows; we quote those below. The fee rebate has neither. It runs for as long as you trade.</p>
+        <p>Welcome rewards end after the window. The fee rebate never does. It runs on every trade you make.</p>
       </div>
     </div>
-    <p class="fineline rv">Rebate applies to eligible trading fees as defined by each exchange; fee rates are set by the exchange and change without notice. Existing accounts can't be moved onto a referral. Welcome-reward tiers and windows are quoted on each card below.</p>
+    <p class="fineline rv">Deposit rewards are set by Bybit, tiered by deposit size and trading volume, and paid within Bybit's windows. Cashback and deposit rewards are promotions, not trading returns. Existing accounts can't be moved onto a referral.</p>
   </div>
 </section>
 
-<!-- SHIFT -->
-<section id="shift">
-  <div class="wrap">
-    <div class="eyebrow rv">The shift</div>
-    <h2 class="rv d1">Pick an exchange by the terms, <span class="accent">not the ad.</span></h2>
-    <p class="lead rv d2">Block &amp; Bull is a market desk, not a bonus funnel. We publish a daily breakdown of crypto and Indian markets with every source linked. Exchanges get the same treatment: read the document, quote it, link it.</p>
-    <div class="stats rv d3">
-      <div class="stat"><b data-count="0">0</b><span>price predictions, ever</span></div>
-      <div class="stat"><b data-count="20" data-suffix="%">0</b><span>of eligible fees back, on Bybit and WEEX</span></div>
-      <div class="stat"><b data-count="100" data-suffix="%">0</b><span>of referral links labelled</span></div>
-    </div>
-  </div>
-  <div class="mq" aria-hidden="true"><div class="mq-in" id="mq"></div></div>
-</section>
 
 <!-- COMPARE / ASK -->
 <section id="compare">
@@ -390,20 +392,6 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   </div>
 </section>
 
-<!-- PROOF -->
-<section id="proof">
-  <div class="wrap">
-    <div class="eyebrow rv">Receipts</div>
-    <h2 class="rv d1">What we can back up. And what we won't say.</h2>
-    <div class="proof">
-      <div class="pf rv"><div class="k">Bybit · Feb 2025</div><big>72 hours</big><p>Time it took Bybit to replenish all user funds after the largest exchange hack on record. Withdrawals stayed open throughout.</p></div>
-      <div class="pf rv d1"><div class="k">The rebate · exchange-native</div><big>0 forms</big><p>The 20% is configured in the exchange's own referral system when you register through our link. We never hold your funds, never see your account, and never pay you by hand.</p></div>
-      <div class="pf rv d2"><div class="k">The category · fine print</div><big>$2,000 → ≈$25</big><p>Coinbase's own homepage footnote, September 2026: headline offer versus average reward. The gap is the whole reason this page exists.</p></div>
-      <div class="pf rv d3"><div class="k">Block &amp; Bull · every post</div><big>Sources linked</big><p>Daily market cards since August 2026, each with data timestamps and sources in the caption. Scroll up to see the last week. Same standard for the offers on this page.</p></div>
-    </div>
-    <div class="nots rv"><span>No price predictions</span><span>No PnL screenshots</span><span>No paid reviews</span><span>No unlabelled links</span></div>
-  </div>
-</section>
 
 <!-- STEPS -->
 <section id="how" style="padding-top:0">
@@ -423,7 +411,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   <div class="wrap">
     <div class="eyebrow rv"><span class="pulse"></span>The community</div>
     <h2 class="rv d1">Trade alongside the desk. <span class="accent">Not alone.</span></h2>
-    <p class="lead rv d2">Our Telegram group for people who join through Block &amp; Bull. Same standard as this page: analysis with sources, no price calls, no PnL screenshots.</p>
+    <p class="lead rv d2">Our Telegram group for people who join through Block &amp; Bull. Analysis with sources, support when you need it, no price calls.</p>
     <div class="tg-grid">
       <div class="tg rv"><div class="k">MEMBERS ONLY</div><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Closed community of traders</h3><p>One tap to join. Traders who registered through our links, moderated daily. No shills, no paid promos, no strangers selling signals in your DMs.</p></div>
       <div class="tg rv d1"><div class="k">SAME DAY</div><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.5-4.5A8 8 0 1 1 21 12z"/></svg></div><h3>Support</h3><p>Rebate not showing? Verification stuck? A deposit tier you can't decode? Ask in the group. We answer in plain English, usually the same day.</p></div>
@@ -434,6 +422,20 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
       <span class="tg-note">@blocknbulls on Telegram · free · 18+ · Educational content, not financial advice</span>
     </div>
   </div>
+</section>
+
+<!-- WINS -->
+<section id="wins">
+  <div class="wrap">
+    <div class="eyebrow rv">Documented, not promised</div>
+    <h2 class="rv d1">The desk's <span class="accent">receipts wall.</span></h2>
+    <p class="lead rv d2">Closed trades from our own desk, longs and shorts, timestamps on every card. This is the work the group is built around.</p>
+  </div>
+  <div class="wins-rows">
+    <div class="wins-row"><div class="wins-track" id="winsRow1"></div></div>
+    <div class="wins-row"><div class="wins-track rev" id="winsRow2"></div></div>
+  </div>
+  <div class="wrap"><div class="warn rv">These are our own past results, shown for illustration only. They are not typical, involve high leverage, and say nothing about your future outcomes. Trading involves substantial risk of loss, including loss of your entire principal. Not financial advice.</div></div>
 </section>
 
 <!-- FAQ -->
@@ -471,6 +473,8 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   <a class="btn btn-gold" data-ex="bybit" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener sponsored">Join now ↗</a>
 </div>
 
+<div id="lightbox"><img id="lightboxImg" alt="Closed trade screenshot"></div>
+
 <footer>
   <div class="wrap">
     <p class="disc">This page contains referral links to third-party exchanges. We earn a commission on trading fees if you sign up through them and share it with you as a fee rebate set inside the exchange; the rebate covers eligible fees as defined by each exchange and is paid by the exchange. Offers are set by the exchanges and may change or end without notice. Nothing on this page is financial, investment or tax advice; it is educational content only and not a recommendation to buy, sell or hold any asset. Cryptocurrency is volatile and high-risk and you can lose your entire investment. Exchange availability varies by country; confirm eligibility on the exchange's own site. Third-party figures quoted from the named companies' public pages on 17 September 2026. Do your own research and consult a qualified professional before making financial decisions.</p>
@@ -481,11 +485,11 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
 <script>
 (function(){
   // ticker
-  var words=['Block & Bull','Zero price calls','Terms quoted','Receipts','Sources linked','Referral links labelled','No PnL screenshots','Timestamped'];
+  var words=['Block & Bull','Zero price calls','Terms quoted','Receipts','Sources linked','Referral links labelled','Receipts wall','Timestamped'];
   var t=document.getElementById('tape'),s='';for(var r=0;r<2;r++){words.forEach(function(w){s+='<span>'+w+'</span>'})}t.innerHTML=s;
   // marquee of real daily cards
   var imgs=['card_sep17.webp','card_sep17b.webp','card_sep15.webp','card_sep15b.webp','card_sep14.webp'];
-  var m=document.getElementById('mq'),h='';for(var r2=0;r2<2;r2++){imgs.forEach(function(i){h+='<img src="/start/img/'+i+'" alt="" loading="lazy" width="220" height="275">'})}m.innerHTML=h;
+  var m=document.getElementById('mq');if(m){var h='';for(var r2=0;r2<2;r2++){imgs.forEach(function(i){h+='<img src="/start/img/'+i+'" alt="" loading="lazy" width="220" height="275">'})}m.innerHTML=h;}
   // headline word reveal
   var h1=document.getElementById('h1'),txt=h1.textContent.split(' ');
   h1.innerHTML=txt.map(function(w,i){return '<span class="w"><i style="animation-delay:'+(i*55)+'ms">'+w+'</i></span>'}).join(' ');
@@ -497,6 +501,15 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   // progress + sticky
   var prog=document.getElementById('prog'),stick=document.getElementById('stick'),hero=document.getElementById('hero');
   addEventListener('scroll',function(){var d=document.documentElement,p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;prog.style.width=p+'%';stick.classList.toggle('on',scrollY>hero.offsetHeight*0.9)},{passive:true});
+
+  // wins wall
+  var W=['win-01','win-02','win-03','win-04','win-05','win-06','win-07','win-08','win-09','win-10','win-11','win-12'];
+  function wc(n){return '<div class="win-card" data-img="/assets/wins/'+n+'.webp"><img src="/assets/wins/'+n+'.webp" alt="Closed trade screenshot" loading="lazy" onerror="this.closest(\'.win-card\').style.display=\'none\'"></div>'}
+  var r1=W.slice(0,6).map(wc).join(''),r2=W.slice(6).map(wc).join('');
+  document.getElementById('winsRow1').innerHTML=r1+r1;document.getElementById('winsRow2').innerHTML=r2+r2;
+  var lb=document.getElementById('lightbox'),lbi=document.getElementById('lightboxImg');
+  document.querySelectorAll('.win-card').forEach(function(c){c.addEventListener('click',function(){lbi.src=c.dataset.img;lb.classList.add('open')})});
+  lb.addEventListener('click',function(){lb.classList.remove('open')});
   // affiliate click → pixel
   document.querySelectorAll('a[data-ex]').forEach(function(a){a.addEventListener('click',function(){if(window.fbq)fbq('trackCustom','AffiliateClick',{exchange:a.dataset.ex})})});
   document.querySelectorAll('a[data-tg]').forEach(function(a){a.addEventListener('click',function(){if(window.fbq)fbq('trackCustom','TelegramJoin',{placement:a.dataset.tg})})});
