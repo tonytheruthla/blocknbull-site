@@ -158,6 +158,27 @@ section{padding:72px 0}
 #done p{color:var(--grey);font-size:14.5px}
 #done a{color:var(--gold);font-weight:600}
 
+/* three-step gate */
+.steps{display:grid;grid-template-columns:1fr;gap:16px;margin:34px auto 0;max-width:1000px;text-align:left}
+@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.step{background:var(--card);border:1px solid var(--line2);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;position:relative;transition:border-color .3s,opacity .3s}
+.step.on{border-color:var(--gold)}
+.step.locked{opacity:.45}
+.step .sn{width:34px;height:34px;border-radius:50%;background:var(--gold);color:#191305;font-family:var(--disp);font-weight:800;font-size:16px;display:grid;place-items:center;margin-bottom:14px}
+.step.locked .sn{background:var(--panel);color:var(--dim)}
+.step h3{font-family:var(--disp);font-weight:800;font-size:21px;margin-bottom:8px}
+.step p{color:var(--grey);font-size:14.5px;flex:1;margin-bottom:16px}
+.step .btn{width:100%}
+.step .sub{font-size:11.5px;color:var(--dim);text-align:center;margin-top:9px}
+.form{display:flex;flex-direction:column;gap:10px}
+.form input{width:100%;background:var(--ink2);border:1px solid var(--line2);border-radius:12px;padding:14px 16px;color:var(--ivory);font-family:var(--body);font-size:14.5px;transition:border-color .2s}
+.form input:focus{outline:none;border-color:var(--gold)}
+.form input::placeholder{color:var(--dim)}
+.err{color:#F2686C;font-size:13px;margin-top:10px;min-height:18px}
+#step3 .btn{pointer-events:none}
+#step3.on .btn{pointer-events:auto}
+.formnote{font-size:12.5px;color:var(--dim);margin-top:22px;max-width:680px;margin-left:auto;margin-right:auto}
+
 .faq{max-width:760px;margin-top:22px}
 .faq details{border-bottom:1px solid var(--line2);padding:16px 0}
 .faq summary{cursor:pointer;font-family:var(--disp);font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
@@ -272,22 +293,43 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   </div>
 </section>
 
-<!-- GET IT -->
+<!-- GET IT: three-step gate -->
 <section id="get">
   <div class="wrap">
     <div class="eyebrow rv" style="justify-content:center">Get the guide</div>
-    <h2 class="rv d1">Send it to <span class="accent">my email.</span></h2>
-    <p class="lead rv d2">We send the guide, then a short run of market education. Leave whenever you want, one click.</p>
-    <form class="form rv d3" id="form" novalidate>
-      <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" required>
-      <input type="text" id="tg" name="telegram" placeholder="@telegram handle (optional)" autocomplete="off">
-      <button type="submit" class="btn btn-gold">Send me the free guide <span class="arr">→</span></button>
-    </form>
-    <p class="formnote rv d3">No card. No spam. Educational content only, not financial advice. 18+.</p>
-    <div id="done">
-      <b>Check your email.</b>
-      <p>The guide is on its way. If it has not arrived in a few minutes, look in promotions or spam. While you wait, the room is open at <a href="https://t.me/blocknbulls" data-tg="thankyou" target="_blank" rel="noopener">@blocknbulls</a>.</p>
+    <h2 class="rv d1">Three steps, <span class="accent">then it is yours.</span></h2>
+    <p class="lead rv d2">The guide is free. It is funded by the referral commission the exchange pays us, which is why step one is opening an account through our link.</p>
+
+    <div class="steps rv d3">
+      <div class="step" id="step1">
+        <div class="sn">1</div>
+        <h3>Open your account</h3>
+        <p>Register on Bybit through the link below. It also sets a 20% fee rebate on your account, paid by the exchange.</p>
+        <a class="btn btn-gold" data-ex="bybit" id="exlink" href="https://partner.bybit.com/b/97103" target="_blank" rel="noopener sponsored">Open a Bybit account <span class="arr">↗</span></a>
+        <div class="sub">Referral link · T&amp;Cs apply · WEEX is not available in India</div>
+      </div>
+
+      <div class="step" id="step2">
+        <div class="sn">2</div>
+        <h3>Send your UID</h3>
+        <p>Your UID is the plain account number in your exchange profile. Not a password, not an API key, nothing that lets anyone touch your funds.</p>
+        <form class="form" id="form" novalidate>
+          <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+          <input type="text" id="uid" name="uid" placeholder="Your exchange UID" autocomplete="off" inputmode="numeric" required>
+          <button type="submit" class="btn btn-gold">Verify and get the guide <span class="arr">→</span></button>
+        </form>
+        <div class="err" id="err"></div>
+      </div>
+
+      <div class="step" id="step3">
+        <div class="sn">3</div>
+        <h3>Download</h3>
+        <p id="dlnote">Opens once your UID is in.</p>
+        <a class="btn btn-ghost" id="dl" href="/assets/guide/BlockAndBull_Crypto_Starter_Guide.pdf" download>Download the guide <span class="arr">↓</span></a>
+      </div>
     </div>
+
+    <p class="formnote rv">We check UIDs against the affiliate dashboard by hand. Accounts opened without the link cannot be matched, which is the whole reason for the step. Educational content only, not financial advice. 18+.</p>
   </div>
 </section>
 
@@ -296,10 +338,11 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   <div class="wrap">
     <div class="eyebrow rv">Straight answers</div>
     <div class="faq rv d1">
-      <details><summary>Is it really free?</summary><p>Yes, and there is no paid tier behind it. We earn referral commission from exchanges elsewhere on the site, which is what pays for this, and that is disclosed wherever it applies.</p></details>
+      <details><summary>Why do I need an exchange account to get a free guide?</summary><p>Because that is what pays for it. The exchange pays us a referral commission on member trading fees and we write the guide out of that, which is why there is no charge and no paid tier. You get a 20% fee rebate set on your account at the same time, so the step is not one-way.</p></details>
       <details><summary>Do you give signals?</summary><p>No, and we never have. You get the framework and the reasoning. The call is yours and so is the outcome.</p></details>
       <details><summary>Will you build my portfolio for me?</summary><p>No. We teach how sizing and balance work and you apply them yourself. We are not portfolio managers and we never take custody of anyone's funds.</p></details>
       <details><summary>Who is it for?</summary><p>Someone who has opened an account, or is about to, and wants to understand the process rather than follow calls.</p></details>
+      <details><summary>What is a UID and is it safe to send?</summary><p>It is the public identifier on your exchange account, the same number support asks for. It cannot be used to log in, move funds or place a trade. A password, an API key or a seed phrase can, which is why we never ask for any of them.</p></details>
       <details><summary>How long is it?</summary><p>Short enough to read in one sitting and structured so you can come back to one section at a time.</p></details>
     </div>
   </div>
@@ -307,7 +350,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
 </main>
 
 <div class="stick" id="stick">
-  <div class="t"><b>The free trading guide</b>No card, no signals</div>
+  <div class="t"><b>The free trading guide</b>Open an account, send your UID</div>
   <a class="btn btn-gold" href="#get">Get it ↓</a>
 </div>
 
@@ -332,20 +375,55 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   var prog=document.getElementById('prog'),stick=document.getElementById('stick'),hero=document.getElementById('hero');
   addEventListener('scroll',function(){var d=document.documentElement,p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;prog.style.width=p+'%';stick.classList.toggle('on',scrollY>hero.offsetHeight*0.9)},{passive:true});
 
-  // Opt-in. No backend wired yet: the form validates, fires the pixel Lead event
-  // and shows the confirmation. Point ENDPOINT at the list provider when ready.
+  // Three-step gate. Step 2 stays locked until the exchange link is clicked,
+  // step 3 until a UID is submitted. Deliberately client-side only: this gates
+  // the DOWNLOAD, it does not verify the referral. A human still checks each
+  // UID against the affiliate dashboard, same as the Telegram gate.
+  // Point ENDPOINT at the list provider to capture email plus UID.
   var ENDPOINT = null;
-  var form=document.getElementById('form'),done=document.getElementById('done');
+  var s1=document.getElementById('step1'), s2=document.getElementById('step2'),
+      s3=document.getElementById('step3'), form=document.getElementById('form'),
+      err=document.getElementById('err'), dl=document.getElementById('dl'),
+      dlnote=document.getElementById('dlnote');
+
+  function setState(n){
+    [s1,s2,s3].forEach(function(el,i){
+      el.classList.toggle('on', i===n);
+      el.classList.toggle('locked', i>n);
+    });
+  }
+  setState(0);
+  try{ if(localStorage.getItem('bnb_guide_unlocked')==='1'){ unlock(true); } }catch(e){}
+
+  document.getElementById('exlink').addEventListener('click',function(){
+    if(window.fbq)fbq('trackCustom','AffiliateClick',{exchange:'bybit',page:'guide'});
+    try{ localStorage.setItem('bnb_guide_step','1'); }catch(e){}
+    setState(1);
+  });
+
+  function unlock(silent){
+    setState(2);
+    dlnote.textContent='Your UID is with the desk. The guide is below.';
+    try{ localStorage.setItem('bnb_guide_unlocked','1'); }catch(e){}
+    if(!silent && window.fbq)fbq('track','Lead',{content_name:'crypto_trading_guide'});
+  }
+
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var email=document.getElementById('email').value.trim();
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById('email').focus();return}
-    if(window.fbq)fbq('track','Lead',{content_name:'crypto_trading_guide'});
-    var payload={email:email,telegram:document.getElementById('tg').value.trim(),source:'guide_optin'};
+    var uid=document.getElementById('uid').value.trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='That email does not look right.';return}
+    if(!/^[A-Za-z0-9]{5,24}$/.test(uid)){err.textContent='A UID is the plain account number from your exchange profile.';return}
+    err.textContent='';
+    var payload={email:email,uid:uid,source:'guide_gate'};
     if(ENDPOINT){fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(){})}
-    form.style.display='none';done.classList.add('on');
-    done.scrollIntoView({behavior:'smooth',block:'center'});
+    unlock(false);
+    s3.scrollIntoView({behavior:'smooth',block:'center'});
   });
+
+  dl.addEventListener('click',function(){ if(window.fbq)fbq('trackCustom','GuideDownload'); });
+
+  document.querySelectorAll('a[data-ex]').forEach(function(a){a.addEventListener('click',function(){if(window.fbq)fbq('trackCustom','AffiliateClick',{exchange:a.dataset.ex,page:'guide'})})});
 
   document.querySelectorAll('a[data-tg]').forEach(function(a){a.addEventListener('click',function(){if(window.fbq)fbq('trackCustom','TelegramJoin',{placement:a.dataset.tg})})});
 })();
