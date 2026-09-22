@@ -18,10 +18,10 @@
 <meta name="twitter:site" content="@blocknbull">
 <link rel="icon" href="/assets/brand/icon-dark.png">
 
-<!-- META PIXEL — replace PIXEL_ID_HERE. Inert until then. -->
+<!-- META PIXEL -->
 <script>
-window.BNB_PIXEL_ID = 'PIXEL_ID_HERE';
-if (window.BNB_PIXEL_ID && window.BNB_PIXEL_ID !== 'PIXEL_ID_HERE') {
+window.BNB_PIXEL_ID = '1586298212362364';
+if (window.BNB_PIXEL_ID) {
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
   n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -361,6 +361,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   </div>
 </footer>
 
+<script src="/assets/js/leads.js"></script>
 <script>
 (function(){
   var T=['Free forever','No card','No signals','You keep the decision','Educational only','18+','Setups','Entries','Stops','Sizing','Risk and reward','Not financial advice'];
@@ -379,8 +380,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   // step 3 until a UID is submitted. Deliberately client-side only: this gates
   // the DOWNLOAD, it does not verify the referral. A human still checks each
   // UID against the affiliate dashboard, same as the Telegram gate.
-  // Point ENDPOINT at the list provider to capture email plus UID.
-  var ENDPOINT = null;
+  // Capture is switched on in one place, /assets/js/leads.js.
   var s1=document.getElementById('step1'), s2=document.getElementById('step2'),
       s3=document.getElementById('step3'), form=document.getElementById('form'),
       err=document.getElementById('err'), dl=document.getElementById('dl'),
@@ -415,8 +415,8 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='That email does not look right.';return}
     if(!/^[A-Za-z0-9]{5,24}$/.test(uid)){err.textContent='A UID is the plain account number from your exchange profile.';return}
     err.textContent='';
-    var payload={email:email,uid:uid,source:'guide_gate'};
-    if(ENDPOINT){fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(){})}
+    var payload={email:email,uid:uid,source:'guide_gate',list:'community_gate'};
+    if(window.bnbSendLead)window.bnbSendLead(payload);
     unlock(false);
     s3.scrollIntoView({behavior:'smooth',block:'center'});
   });
