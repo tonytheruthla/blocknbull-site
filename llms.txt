@@ -20,6 +20,7 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 
 ## Markets & analysis
 
+- [Why the Indian Market Fell for Seven Straight Weeks (Sep 2026)](https://blocknbull.xyz/nifty-seven-week-losing-streak-2026): The Nifty's longest weekly losing streak since the 2020 Covid crash — why US bond yields near 5% drove it, and the FII-vs-DII tug-of-war in which domestic funds bought nearly three times what foreigners sold.
 - [Six IPOs in One Day: What India's Biggest Primary Rush Since 1996 Actually Tells You (Sep 2026)](https://blocknbull.xyz/india-ipo-rush-ofs): Why six mainboard IPOs opened together for the first time since 1996, the fresh-issue versus offer-for-sale distinction that decides where your money goes, and what to check instead of the grey market premium.
 - [The CPI Number Isn't What Moves Markets. The Gap Is. (Sep 2026)](https://blocknbull.xyz/cpi-surprise-explained): Why markets trade the surprise rather than the level, what the August CPI consensus and the Cleveland Fed nowcast say, and why core matters more than headline when oil is moving.
 - [What $97 Crude Actually Does to Indian Portfolios (Sep 2026)](https://blocknbull.xyz/crude-oil-india-sector-map): India imports 85% of its crude — the chain from a tanker strike to the import bill, the rupee, sector cost structures, and what the government can do about it.
