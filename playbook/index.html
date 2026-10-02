@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The free Crypto Beginner Playbook | Block &amp; Bull</title>
+<meta name="description" content="A free 12-chapter crypto playbook in plain English: first account, security, SIP, staking, airdrops and portfolio balancing. Delivered on Telegram. Crypto is high-risk. Not financial advice.">
+<link rel="canonical" href="https://blocknbull.xyz/playbook/">
+<meta name="theme-color" content="#0B0D12">
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Block &amp; Bull">
+<meta property="og:url" content="https://blocknbull.xyz/playbook/">
+<meta property="og:title" content="Your first crypto account to a real portfolio. Free playbook.">
+<meta property="og:description" content="12 short chapters, plain English, an infographic on every page. Sent to you on Telegram in one tap. Not financial advice. 18+.">
+<meta property="og:image" content="https://blocknbull.xyz/assets/brand/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@blocknbull">
+<link rel="icon" href="/assets/brand/icon-dark.png">
+
+<!-- META PIXEL -->
+<script>
+window.BNB_PIXEL_ID = '1586298212362364';
+if (window.BNB_PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', window.BNB_PIXEL_ID); fbq('track', 'PageView');
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0B0D12;--ink2:#0E1116;--card:#10141C;--panel:#141925;
+  --gold:#E5B94E;--gold2:#C99B2F;--green:#2EBD6B;--red:#E5534B;
+  --ivory:#F4EFE6;--grey:#A7ADB8;--dim:#5E6572;--line:rgba(244,239,230,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--ivory);font-family:'Schibsted Grotesk',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Bricolage Grotesque',sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ivory);text-decoration:none;font-family:'Bricolage Grotesque';font-weight:800;letter-spacing:.04em}
+.logo img{width:30px;height:30px}
+.logo b{color:var(--gold)}
+.pill{font-size:13px;color:var(--ink);background:var(--gold);padding:9px 18px;border-radius:999px;text-decoration:none;font-weight:700}
+.hero{padding:44px 0 26px;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--gold);border-radius:2px}
+h1{font-size:clamp(36px,6.4vw,62px);line-height:1.04;font-weight:800;margin:16px 0 18px}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{color:var(--grey);font-size:clamp(16px,2.2vw,18.5px);max-width:620px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 10px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16.5px;transition:transform .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#14100a;box-shadow:0 10px 30px rgba(229,185,78,.22)}
+.btn-ghost{border:1px solid var(--line);color:var(--ivory)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--dim);font-size:13px;margin-top:16px}
+.trust span::before{content:"\u2713 ";color:var(--green)}
+.bookcard{background:linear-gradient(160deg,var(--panel),var(--card));border:1px solid var(--line);border-radius:18px;padding:26px 24px;margin:34px 0 0}
+.bookcard .tag{color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-top:18px}
+.ch{display:flex;gap:12px;align-items:flex-start;background:var(--ink2);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+.ch b{font-family:'Bricolage Grotesque';color:var(--gold);font-size:15px;min-width:26px}
+.ch div{font-size:14.5px}
+.ch small{display:block;color:var(--dim);font-size:12.5px;margin-top:2px}
+section{padding:40px 0}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800;line-height:1.1;margin-bottom:14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 18px}
+.step .n{font-family:'Bricolage Grotesque';font-weight:800;color:var(--ink);background:var(--gold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.step h3{font-size:17.5px;margin-bottom:6px}
+.step p{color:var(--grey);font-size:14.5px}
+.honest{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:20px 22px;margin-top:26px;color:var(--grey);font-size:15px}
+.honest b{color:var(--ivory)}
+.foot{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--dim);font-size:12.5px;line-height:1.7}
+.stick{position:fixed;left:0;right:0;bottom:0;background:rgba(11,13,18,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 0;transform:translateY(110%);transition:transform .3s ease;z-index:50}
+.stick.on{transform:none}
+.stick .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.stick .t{font-size:13.5px;color:var(--grey)}
+.stick .t b{display:block;color:var(--ivory);font-size:14.5px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media(max-width:560px){.btn{width:100%;justify-content:center}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <a class="logo" href="https://blocknbull.xyz/"><img src="/assets/brand/icon-dark.png" alt="Block &amp; Bull">BLOCK &amp; <b>BULL</b></a>
+  <a class="pill" href="#get">Get it free</a>
+</header>
+
+<section class="hero">
+  <span class="eyebrow rv in">Free \u00b7 PDF \u00b7 English + Hindi room</span>
+  <h1 class="rv in">First crypto account to a <em>real portfolio.</em><br>One free playbook.</h1>
+  <p class="lead rv in d1">12 short chapters in plain English with an infographic on every page. Open your first account safely, lock it down, then build: a monthly SIP, staking that pays, airdrops done safely and a portfolio that survives a bad month.</p>
+  <div class="cta-row rv in d2" id="get">
+    <a class="btn btn-gold" id="tg" href="https://t.me/blocknbullbot?start=as7_c1" target="_blank" rel="noopener">Send me the playbook &#8594;</a>
+    <a class="btn btn-ghost" href="#inside">What is inside &#8595;</a>
+  </div>
+  <div class="trust rv in d3"><span>100% free, no email asked</span><span>Arrives on Telegram in one tap</span><span>Educational, not financial advice</span><span>18+</span></div>
+
+  <div class="bookcard rv in d3" id="inside">
+    <span class="tag">Inside the 12 chapters</span>
+    <div class="chapters">
+      <div class="ch"><b>01</b><div>What an exchange actually is<small>the whole thing, one diagram</small></div></div>
+      <div class="ch"><b>02</b><div>Your account in ten minutes<small>KYC, step by step</small></div></div>
+      <div class="ch"><b>03</b><div>The 6-switch security lockdown<small>before any money moves</small></div></div>
+      <div class="ch"><b>04</b><div>Money in, and what fees take<small>the tier most people overpay</small></div></div>
+      <div class="ch"><b>05</b><div>The first buy, annotated<small>every button explained</small></div></div>
+      <div class="ch"><b>06</b><div>SIP, but for crypto<small>the boring trick that works</small></div></div>
+      <div class="ch"><b>07</b><div>Staking, the passive layer<small>real yield vs marketing yield</small></div></div>
+      <div class="ch"><b>08</b><div>Airdrop farming<small>paid to be early, safely</small></div></div>
+      <div class="ch"><b>09</b><div>Portfolio balancing<small>the quarterly discipline loop</small></div></div>
+      <div class="ch"><b>10</b><div>AI met crypto<small>what is real, what is a logo</small></div></div>
+      <div class="ch"><b>11</b><div>What goes wrong<small>the four classic mistakes</small></div></div>
+      <div class="ch"><b>12</b><div>The India pages<small>30% tax, 1% TDS, Schedule VDA</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="rv">How it arrives</h2>
+  <div class="steps">
+    <div class="step rv d1"><div class="n">1</div><h3>Tap the button</h3><p>It opens our Telegram bot. No form, no email, no spam folder.</p></div>
+    <div class="step rv d2"><div class="n">2</div><h3>The PDF lands instantly</h3><p>The full playbook arrives in the chat, yours to keep, plus an invite to the free daily room.</p></div>
+    <div class="step rv d3"><div class="n">3</div><h3>Read with backup</h3><p>Stuck on any chapter? Ask in the room. The market gets explained there every day, in English and Hindi.</p></div>
+  </div>
+  <div class="honest rv d2"><b>The honest part:</b> the playbook is educational content, not financial advice. Crypto is volatile and high risk. The book teaches process and safety first, and every decision stays yours. 18+ only.</div>
+</section>
+
+<footer class="foot">
+  Educational content only. Not financial advice. Crypto products and NFTs are unregulated and can be highly risky. There may be no regulatory recourse for any loss from such transactions. We are not registered investment advisers, we never manage or access anyone's funds, and nothing here is a recommendation to buy, sell or hold any asset. This page contains no referral links; other parts of this site do, disclosed where they appear. Do your own research. 18+.<br><br>&copy; 2026 Block &amp; Bull &middot; blocknbull.xyz &middot; Not financial advice.
+</footer>
+</div>
+
+<div class="stick" id="stick">
+  <div class="wrap">
+    <div class="t"><b>The Crypto Beginner Playbook</b>Free on Telegram, one tap</div>
+    <a class="btn btn-gold" id="tgs" href="https://t.me/blocknbullbot?start=as7_c1" target="_blank" rel="noopener">Get it &#8594;</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  var hero=document.querySelector('.hero'),stick=document.getElementById('stick');
+  window.addEventListener('scroll',function(){stick.classList.toggle('on',window.scrollY>hero.offsetHeight*0.8)},{passive:true});
+  // ad-set source passthrough: /playbook?s=as8 retags the buttons. Default as7.
+  var src=(new URLSearchParams(location.search).get('s')||'').replace(/[^a-zA-Z0-9_]/g,'');
+  if(src){ ['tg','tgs'].forEach(function(id){ var el=document.getElementById(id); if(el) el.href='https://t.me/blocknbullbot?start='+src+'_c1'; }); }
+  ['tg','tgs'].forEach(function(id){ var el=document.getElementById(id); if(el) el.addEventListener('click',function(){ if(window.fbq){ fbq('track','Lead'); fbq('trackCustom','PlaybookClick'); } }); });
+})();
+</script>
+</body>
+</html>
