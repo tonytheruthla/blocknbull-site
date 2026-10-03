@@ -39,3 +39,4 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 - Exchange reviews and comparisons are balanced by design and name real risks (security incidents, fee structures, regulatory history) — they are not promotional-only content.
 - Nothing on this site is financial, investment, or tax advice. Cryptocurrency is high-risk and volatile.
 - Exchange links are referral links; this is disclosed on every page that contains one.
+- [The RBI Decides on Wednesday: What a Repo Rate Change Does to Your Money (October 2026)](https://blocknbull.xyz/rbi-rate-decision-october-2026-explained): plain-English explainer of the October 2026 RBI rate decision and repo mechanics.
