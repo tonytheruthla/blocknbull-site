@@ -20,6 +20,7 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 
 ## Markets & analysis
 
+- [Bitcoin, Gold and Tech Stocks Fell Together. One Number Explains Why (Oct 2026)](https://blocknbull.xyz/bond-yields-price-of-money-explained): Why Bitcoin, gold and growth stocks dropped in the same week, the US 10-year Treasury yield at a 24-year high of 5.34%, and how the risk-free rate reprices every asset through the discount rate and opportunity cost.
 - [Why the Indian Market Fell for Seven Straight Weeks (Sep 2026)](https://blocknbull.xyz/nifty-seven-week-losing-streak-2026): The Nifty's longest weekly losing streak since the 2020 Covid crash — why US bond yields near 5% drove it, and the FII-vs-DII tug-of-war in which domestic funds bought nearly three times what foreigners sold.
 - [Six IPOs in One Day: What India's Biggest Primary Rush Since 1996 Actually Tells You (Sep 2026)](https://blocknbull.xyz/india-ipo-rush-ofs): Why six mainboard IPOs opened together for the first time since 1996, the fresh-issue versus offer-for-sale distinction that decides where your money goes, and what to check instead of the grey market premium.
 - [The CPI Number Isn't What Moves Markets. The Gap Is. (Sep 2026)](https://blocknbull.xyz/cpi-surprise-explained): Why markets trade the surprise rather than the level, what the August CPI consensus and the Cleveland Fed nowcast say, and why core matters more than headline when oil is moving.
@@ -39,4 +40,3 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 - Exchange reviews and comparisons are balanced by design and name real risks (security incidents, fee structures, regulatory history) — they are not promotional-only content.
 - Nothing on this site is financial, investment, or tax advice. Cryptocurrency is high-risk and volatile.
 - Exchange links are referral links; this is disclosed on every page that contains one.
-- [The RBI Decides on Wednesday: What a Repo Rate Change Does to Your Money (October 2026)](https://blocknbull.xyz/rbi-rate-decision-october-2026-explained): plain-English explainer of the October 2026 RBI rate decision and repo mechanics.
