@@ -265,7 +265,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
         <li>Early opportunities and alpha</li>
       </ul>
       <div class="join-cta rv d2" id="join">
-        <a class="btn btn-gold" id="tg" href="https://t.me/blocknbullbot?start=as5_c1" target="_blank" rel="noopener">Join the free community <span class="arr">&#8594;</span></a>
+        <a class="btn btn-gold" id="tg" href="https://t.me/blocknbulldaily" target="_blank" rel="noopener">Join the free community <span class="arr">&#8594;</span></a>
         <a class="btn btn-x" id="xx" href="https://x.com/blocknbull" target="_blank" rel="noopener">Follow on X <span class="arr">&#8594;</span></a>
       </div>
       <div class="trust rv d3"><span>Free to join</span><span>No complicated setup</span><span>Educational community</span><span>18+</span></div>
@@ -347,7 +347,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
     </div>
     <p class="lead rv d2" style="margin-top:30px">Telegram is where the community talks. X is where the threads go. Most people join both.</p>
     <div class="join-cta rv d3" style="justify-content:center">
-      <a class="btn btn-gold" id="tg2" href="https://t.me/blocknbullbot?start=as5_c1" target="_blank" rel="noopener">Join the free community <span class="arr">&#8594;</span></a>
+      <a class="btn btn-gold" id="tg2" href="https://t.me/blocknbulldaily" target="_blank" rel="noopener">Join the free community <span class="arr">&#8594;</span></a>
       <a class="btn btn-x" id="xx2" href="https://x.com/blocknbull" target="_blank" rel="noopener">Follow on X <span class="arr">&#8594;</span></a>
     </div>
     <p class="formnote rv">Crypto assets are volatile and involve substantial risk. Nothing in this community is personalised financial advice or a guarantee of returns. Do your own research and decide on your own circumstances. 18+.</p>
@@ -388,7 +388,7 @@ footer{border-top:1px solid var(--line2);padding:40px 0 90px;background:var(--ca
   // ad-set source passthrough: /join?s=as6 retags both Telegram buttons so the
   // bot logs the right ad set. No param = as5, the live India set.
   var src=(new URLSearchParams(location.search).get('s')||'').replace(/[^a-zA-Z0-9_]/g,'');
-  if(src){ ['tg','tg2'].forEach(function(id){ var el=document.getElementById(id); if(el) el.href='https://t.me/blocknbullbot?start='+src+'_c1'; }); }
+  // buttons go straight to the room; no bot rewrite
   ['tg','tg2'].forEach(function(id){ var el=document.getElementById(id); if(el) el.addEventListener('click',function(){track('telegram')}); });
   ['xx','xx2'].forEach(function(id){ var el=document.getElementById(id); if(el) el.addEventListener('click',function(){track('x')}); });
 })();
