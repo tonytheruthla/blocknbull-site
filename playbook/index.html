@@ -231,7 +231,7 @@ h2{font-size:clamp(27px,4.4vw,40px);font-weight:800;line-height:1.08;margin-bott
   var hero=document.querySelector('.hero'),stick=document.getElementById('stick');
   window.addEventListener('scroll',function(){stick.classList.toggle('on',window.scrollY>hero.offsetHeight*0.9)},{passive:true});
   var src=(new URLSearchParams(location.search).get('s')||'').replace(/[^a-zA-Z0-9_]/g,'');
-  if(src){ ['tg','tg2','tgs'].forEach(function(id){ var el=document.getElementById(id); if(el) el.href='/assets/playbook/BlockAndBull_Crypto_Playbook.pdf'+src+'_c1'; }); }
+  // buttons serve the hosted PDF directly; no ?s= rewrite
   ['tg','tg2','tgs'].forEach(function(id){ var el=document.getElementById(id); if(el) el.addEventListener('click',function(){ if(window.fbq){ fbq('track','Lead'); fbq('trackCustom','PlaybookClick'); } }); });
 
   // motion layer: cursor glow, card tilt + spotlight, book parallax (desktop only)
