@@ -98,6 +98,10 @@ h1 em{color:var(--red);font-style:italic}
 <script>
 (function(){
   var a=(new URLSearchParams(location.search).get('a')||'direct').replace(/[^a-zA-Z0-9_]/g,'').slice(0,24);
+  // v7: each ad set gets its own named invite link so the bot counts real joins per audience.
+  var L={A1:'https://t.me/+vzh2twLBDtwxYTBl',A2:'https://t.me/+Pix-GbCkFRs5Y2Y1',A3:'https://t.me/+7gsq2uYbFeQ1MWM1'};
+  var m=a.match(/_(A[123])$/);
+  if(m&&L[m[1]]){['join','join2'].forEach(function(id){document.getElementById(id).href=L[m[1]];});}
   function ev(name,std){ if(!window.fbq) return; if(std) fbq('track',std,{content_name:name,content_category:a}); fbq('trackCustom',name,{src:a}); }
   // Lead = tap out to the Telegram group. This is the event the v6 ads optimise for.
   ['join','join2'].forEach(function(id){ document.getElementById(id).addEventListener('click',function(){ ev('JoinClick','Lead'); }); });
