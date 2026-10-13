@@ -71,7 +71,7 @@ h1 em{color:var(--red);font-style:italic}
   <section class="get">
     <div><b>Every morning:</b> what moved in crypto, Nifty and Sensex, and why</div>
     <div><b>Any time:</b> ask the question you were embarrassed to ask</div>
-    <div><b>Every week:</b> charted trade setups with stops, and free chart requests for your coins</div>
+    <div><b>Every week:</b> polls, open Q&amp;A and plain-English explainers</div>
     <div><b>Never:</b> paid tips, or DMs asking for money</div>
   </section>
   <a class="cta" id="join2" href="https://t.me/+roz6nMR9HS01ZjI1">Join free on Telegram →</a>
@@ -82,13 +82,9 @@ h1 em{color:var(--red);font-style:italic}
 (function(){
   // v7 message match: the headline and points follow the ad's angle (?v=).
   var V={
-   community:["You don't have to trade <em>alone</em>","A free Telegram room where real traders answer questions and share their charts every day.",["Daily 5-minute market brief","Real traders reply","English + Hindi"]],
-   signals:["3 numbers on <em>every free call</em>","Entry, target and stop, posted with the chart. Every result is posted too, wins and losses.",["Charted setups with stops","Results posted","The reasoning, explained"]],
-   rebalance:["Your portfolio, <em>rebalanced with a plan</em>","We walk you through core coins, bets and cash, and when traders trim.",["Rebalancing walkthroughs","Core vs bets","Risk first"]],
-   chart:["Send your coin. <em>We'll chart it</em>","Drop a ticker in the group and our traders mark the levels that matter.",["Chart requests","Key levels marked","Ask follow-ups"]],
-   lowcaps:["Your next-cycle <em>watchlist, researched</em>","Early-stage coins broken down: unlocks, liquidity, backers, and the risks first.",["Low-cap research","Unlock checks","Risks shown first"]],
-   learn:["Crypto finally <em>makes sense to you</em>","Plain English and Hindi, from zero. The free 12-chapter Playbook is pinned at the top.",["Free Playbook","Daily explainers","No jargon"]],
-   qna:["Your question, <em>a real trader's answer</em>","Ask anything in the open group, get a real answer, and learn from everyone else's.",["Personal Q&amp;A","Any level","No DMs for money"]]
+   community:["You don't have to learn markets <em>alone</em>","A free Telegram community with a 5-minute market brief every morning and real answers to your questions.",["Daily 5-minute market brief","Real traders reply","English + Hindi"]],
+   learn:["Markets finally <em>make sense to you</em>","Plain English and Hindi, from zero. The free 12-chapter Playbook is pinned at the top.",["Free Playbook","Daily explainers","No jargon"]],
+   qna:["Your question, <em>a real answer</em>","Ask anything in the open group, get a real answer, and learn from everyone else's.",["Personal Q&amp;A","Any level","No DMs for money"]]
   };
   var v=(new URLSearchParams(location.search).get('v')||'').replace(/[^a-z]/g,'');
   if(V[v]){document.getElementById('h1').innerHTML=V[v][0];document.getElementById('lede').textContent=V[v][1];
