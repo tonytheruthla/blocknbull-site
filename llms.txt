@@ -33,6 +33,7 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 - [What Actually Happens to Stocks and Bitcoin When the Fed Hikes Rates (2026)](https://blocknbull.xyz/fed-rate-hikes-stocks-bitcoin-history): Five Fed tightening cycles since 1990, Bitcoin's one full cycle, and why surprise repricing moved prices more than the hikes themselves.
 - [What Actually Happens to Bitcoin When the Yen Carry Trade Unwinds (2026)](https://blocknbull.xyz/yen-carry-trade-bitcoin-explained): What a carry trade is, the August 2024 BIS-documented case study, and why Bitcoin's yen correlation may be dollar-driven rather than carry-trade-driven in 2026.
 
+- [Emergency Fund First: How Much to Save Before Crypto (2026)](https://blocknbull.xyz/emergency-fund-before-crypto-india/): Save 3 to 6 months of essential expenses before buying crypto, how much that is and where to keep it in India.
 ## About
 
 - [Homepage](https://blocknbull.xyz/): daily market breakdowns, documented trade receipts, and exchange bonus comparisons.
