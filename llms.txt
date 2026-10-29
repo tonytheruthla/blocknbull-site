@@ -34,6 +34,7 @@ Block & Bull produces daily market breakdowns (crypto, macro, on-chain), long-fo
 - [What Actually Happens to Bitcoin When the Yen Carry Trade Unwinds (2026)](https://blocknbull.xyz/yen-carry-trade-bitcoin-explained/): What a carry trade is, the August 2024 BIS-documented case study, and why Bitcoin's yen correlation may be dollar-driven rather than carry-trade-driven in 2026.
 
 - [Emergency Fund First: How Much to Save Before Crypto (2026)](https://blocknbull.xyz/emergency-fund-before-crypto-india/): Save 3 to 6 months of essential expenses before buying crypto, how much that is and where to keep it in India.
+- [Crypto Leverage in India: Why Most Traders Get Wiped Out (2026)](https://blocknbull.xyz/crypto-leverage-trading-india/): Leverage turns a 10% drop into a total loss. SEBI found over 91% of Indian F&O traders lost money; India also taxes wins at 30% and ignores losses.
 ## About
 
 - [Homepage](https://blocknbull.xyz/): daily market breakdowns, documented trade receipts, and exchange bonus comparisons.
